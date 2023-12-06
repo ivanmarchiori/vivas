@@ -145,7 +145,7 @@
             <?=$language['new']?>
             </span></a> <a class="dropdown-item" href="/block"><i class='bx bx-lock text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
             <?=$language['Lock_screen']?>
-            </span></a> <a class="dropdown-item" href="auth-logout.php"><i class='bx bx-log-out text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
+            </span></a> <a class="dropdown-item" href="/logout"><i class='bx bx-log-out text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
             <?=$language['Logout']?>
             </span></a> </div>
         </div>

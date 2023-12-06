@@ -55,10 +55,10 @@ Route::group([
     'as' => 'products.'
 ], function () {
     Route::get('/list', [ProductsController::class, 'index'])->name('products');
-    Route::get('/details/1',[ProductsController::class, 'details']);
+    Route::get('/details/{id}',[ProductsController::class, 'details']);
 });
 
 
 // Parei aqui
 Route::get('/invoice',[InvoiceController::class, 'index']);
-Route::get('/invoice/detail/{id}',[InvoiceController::class, 'details']);
+Route::get('/invoice/details/{id}',[InvoiceController::class, 'details']);

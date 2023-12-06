@@ -21,7 +21,7 @@ $language = App::make('language');
                 <!-- start page title -->
                 <?php
                 $maintitle = "e-VIVAS";
-                $title = 'Invoice Detail';
+                $title = 'Invoice Detail > '.$id;
                 ?>
                 <?php
                 include resource_path('views/layouts/breadcrumb.php');

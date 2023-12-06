@@ -76,7 +76,7 @@
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="topnav-invoice">
                                             <a href="/invoice" class="dropdown-item" data-key="t-invoice-list"><?php echo $language["Invoice_List"]; ?></a>
-                                            <a href="/invoice/detail/1" class="dropdown-item" data-key="t-invoice-detail"><?php echo $language["Invoice_Detail"]; ?></a>
+                                            <a href="/invoice/details/1" class="dropdown-item" data-key="t-invoice-detail"><?php echo $language["Invoice_Detail"]; ?></a>
                                         </div>
                                     </div>
 
@@ -241,10 +241,7 @@
                                             <a href="page-register.php" class="dropdown-item" data-key="t-register"><?php echo $language["Register"]; ?></a>
                                             <a href="page-recoverpw.php" class="dropdown-item" data-key="t-recover-password"><?php echo $language["Recover_Password"]; ?></a>
                                             <a href="/block" class="dropdown-item" data-key="t-lock-screen"><?php echo $language["Lock_Screen"]; ?></a>
-                                            <a href="auth-logout.php" class="dropdown-item" data-key="t-logout"><?php echo $language["Log_Out"]; ?></a>
-                                            <a href="auth-confirm-mail.php" class="dropdown-item" data-key="t-confirm-mail"><?php echo $language["Confirm_Mail"]; ?></a>
-                                            <a href="auth-email-verification.php" class="dropdown-item" data-key="t-email-verification"><?php echo $language["Email_Verification"]; ?></a>
-                                            <a href="auth-two-step-verification.php" class="dropdown-item" data-key="t-two-step-verification"><?php echo $language["Two_Step_Verification"]; ?></a>
+                                            <a href="/logout" class="dropdown-item" data-key="t-logout"><?php echo $language["Log_Out"]; ?></a>
                                         </div>
                                     </div>
 
@@ -458,7 +455,7 @@
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item d-flex align-items-center" href="#"><i class='bx bx-cog text-muted font-size-18 align-middle me-1'></i> <span class="align-middle me-3"><?php echo $language["Settings"]; ?></span><span class="badge badge-soft-success ms-auto">New</span></a>
                     <a class="dropdown-item" href="/block"><i class='bx bx-lock text-muted font-size-18 align-middle me-1'></i> <span class="align-middle"><?php echo $language["Lock_screen"]; ?></span></a>
-                    <a class="dropdown-item" href="auth-logout.php"><i class='bx bx-log-out text-muted font-size-18 align-middle me-1'></i> <span class="align-middle"><?php echo $language["Logout"]; ?></span></a>
+                    <a class="dropdown-item" href="/logout"><i class='bx bx-log-out text-muted font-size-18 align-middle me-1'></i> <span class="align-middle"><?php echo $language["Logout"]; ?></span></a>
                 </div>
             </div>
         </div>

@@ -22,7 +22,7 @@ $language = App::make('language');
                 <!-- start page title -->
                 <?php
                 $maintitle = "e-VIVAS";
-                $title = 'Products Details';
+                $title = 'Products Details > '.$id;
                 ?>
                 <?php
                 include resource_path('views/layouts/breadcrumb.php');
