@@ -133,9 +133,9 @@
                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="rounded-circle header-profile-user" src="/assets/images/users/avatar-1.jpg" alt="Header Avatar"> </button>
           <div class="dropdown-menu dropdown-menu-end pt-0"> <a class="dropdown-item" href="/myaccount"><i class='bx bx-user-circle text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
             <?=$language['My_Account']?>
-            </span></a> <a class="dropdown-item" href="/assets/><i class='bx bx-"/assets/ text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
-            <?=$language['Chat']?>
-            </span></a> <a class="dropdown-item" href="/help"><i class='bx bx-buoy text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
+            </span></a> <a class="dropdown-item" href="apps-chat.php"><i class='bx bx-chat text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
+          "/assets/
+          </span></a> <a class="dropdown-item" href="/help"><i class='bx bx-buoy text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
             <?=$language['Support']?>
             </span></a>
             <div class="dropdown-divider"></div>
