@@ -11,7 +11,8 @@ class LoginController extends Controller
      */
     public function index()
     {
-        //
+       $canal = 'login';
+       return view('login',['canal'=>$canal]);
     }
 
     /**

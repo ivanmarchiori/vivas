@@ -34,25 +34,31 @@ Route::get('/block',[BlockController::class, 'index']);
 Route::get('/calendar',[CalendarController::class, 'index']);
 Route::get('/chat',[ChatController::class, 'index']);
 Route::get('/notes',[NotesController::class, 'index']);
-Route::get('/profile',[ProfileController::class, 'index']);
+Route::get('/notes-read',[NotesController::class, 'read']);
 
 Route::get('/login',[LoginController::class, 'index']);
 Route::get('/logout',[LogoutController::class, 'index']);
-
-
 
 Route::get('/contact', [ContactController::class, 'index']);
 Route::group([
     'prefix' => 'contact',
     'as' => 'contact.'
 ], function () {
-    Route::get('list', [ContactController::class, 'index'])->name('list');
-    Route::get('grid', [ContactController::class, 'grid'])->name('grid');
-    Route::get('perfil', [ContactController::class, 'pergil'])->name('perfil');
+    Route::get('/list', [ContactController::class, 'list'])->name('list');
+    Route::get('/grid', [ContactController::class, 'grid'])->name('grid');
+    Route::get('/profile', [ContactController::class, 'profile'])->name('perfil');
 });
 
-Route::get('/store/products',[ProductsController::class, 'index']);
-Route::get('/store/products/{id}',[ProductsController::class, 'details']);
+Route::get('/products', [ProductsController::class, 'index']);
+Route::group([
+    'prefix' => 'products',
+    'as' => 'products.'
+], function () {
+    Route::get('/list', [ProductsController::class, 'index'])->name('products');
+    Route::get('/details/1',[ProductsController::class, 'details']);
+});
 
+
+// Parei aqui
 Route::get('/invoice',[InvoiceController::class, 'index']);
-Route::get('/invoice/{id}',[InvoiceController::class, 'details']);
+Route::get('/invoice/detail/{id}',[InvoiceController::class, 'details']);

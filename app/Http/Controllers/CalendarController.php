@@ -11,7 +11,8 @@ class CalendarController extends Controller
      */
     public function index()
     {
-        //
+       $canal = 'calendar';
+       return view('calendar',['canal'=>$canal]);
     }
 
     /**

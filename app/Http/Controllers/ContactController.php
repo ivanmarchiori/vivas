@@ -11,7 +11,23 @@ class ContactController extends Controller
      */
     public function index()
     {
-        //
+       $canal = 'contact';
+       return view('contact-list',['canal'=>$canal]);
+    }
+    public function list()
+    {
+       $canal = 'contact List';
+       return view('contact-list',['canal'=>$canal]);
+    }
+    public function grid()
+    {
+       $canal = 'contact Grid';
+       return view('contact-grid',['canal'=>$canal]);
+    }
+    public function profile()
+    {
+       $canal = 'Profile';
+       return view('contact-profile',['canal'=>$canal]);
     }
 
     /**

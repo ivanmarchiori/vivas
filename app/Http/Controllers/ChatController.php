@@ -11,7 +11,8 @@ class ChatController extends Controller
      */
     public function index()
     {
-        //
+       $canal = 'chat';
+       return view('chat',['canal'=>$canal]);
     }
 
     /**
