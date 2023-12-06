@@ -13,7 +13,6 @@ use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\InvoiceController;
-use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,17 +26,17 @@ use App\Http\Controllers\ProfileController;
 */
 
 
-Route::get('/',[HomeController::class, 'index']);
-Route::get('/myaccount',[MyAccountController::class, 'index']);
-Route::get('/help',[HelpController::class, 'index']);
-Route::get('/block',[BlockController::class, 'index']);
-Route::get('/calendar',[CalendarController::class, 'index']);
-Route::get('/chat',[ChatController::class, 'index']);
-Route::get('/notes',[NotesController::class, 'index']);
-Route::get('/notes-read',[NotesController::class, 'read']);
+Route::get('/', [HomeController::class, 'index']);
+Route::get('/myaccount', [MyAccountController::class, 'index']);
+Route::get('/help', [HelpController::class, 'index']);
+Route::get('/block', [BlockController::class, 'index']);
+Route::get('/calendar', [CalendarController::class, 'index']);
+Route::get('/chat', [ChatController::class, 'index']);
+Route::get('/notes', [NotesController::class, 'index']);
+Route::get('/notes-read', [NotesController::class, 'read']);
 
-Route::get('/login',[LoginController::class, 'index']);
-Route::get('/logout',[LogoutController::class, 'index']);
+Route::get('/login', [LoginController::class, 'index']);
+Route::get('/logout', [LogoutController::class, 'index']);
 
 Route::get('/contact', [ContactController::class, 'index']);
 Route::group([
@@ -55,10 +54,10 @@ Route::group([
     'as' => 'products.'
 ], function () {
     Route::get('/list', [ProductsController::class, 'index'])->name('products');
-    Route::get('/details/{id}',[ProductsController::class, 'details']);
+    Route::get('/details/{id}', [ProductsController::class, 'details']);
 });
 
 
 // Parei aqui
-Route::get('/invoice',[InvoiceController::class, 'index']);
-Route::get('/invoice/details/{id}',[InvoiceController::class, 'details']);
+Route::get('/invoice', [InvoiceController::class, 'index']);
+Route::get('/invoice/details/{id}', [InvoiceController::class, 'details']);

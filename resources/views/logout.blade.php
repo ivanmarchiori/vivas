@@ -5,7 +5,6 @@ $language = App::make('language');
 ?>
 @extends('layouts.layout')
 @section('conteudo')
-
 <div class="authentication-bg min-vh-100">
     <div class="bg-overlay"></div>
     <div class="container">

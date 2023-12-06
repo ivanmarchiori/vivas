@@ -1,9 +1,10 @@
-@extends('layouts.layout')
 <?php
 use Illuminate\Support\Facades\App;
 $lang = App::make('lang');
 $language = App::make('language');
 ?>
+
+@extends('layouts.layout')
 <div class="authentication-bg min-vh-100" style="background: url(./assets/images/auth-bg.jpg) bottom;">
     <div class="bg-overlay bg-light"></div>
     <div class="container">

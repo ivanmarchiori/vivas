@@ -1,3 +1,8 @@
+<?php
+use Illuminate\Support\Facades\App;
+$lang = App::make('lang');
+$language = App::make('language');
+?>
 @extends('layouts.layout')
 @section('conteudo')
 <div class="authentication-bg min-vh-100">
