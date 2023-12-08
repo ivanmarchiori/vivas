@@ -31,11 +31,11 @@
                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="header-lang-img" src="/assets/images/flags/br.jpg" alt="Header Language" height="16"> </button>
           <div class="dropdown-menu dropdown-menu-end">
             <!-- item-->
-            <a href="/lang/br" class="dropdown-item notify-item language" data-lang="br"> <img src="/assets/images/flags/br.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Português</span> </a>
+            <a href="/lang/br" class="<?php include resource_path('views/layouts/footer.blade.php');?>" data-lang="br"> <img src="/assets/images/flags/br.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Português</span> </a>
             <!-- item-->
-            <a href="/lang/en" class="dropdown-item notify-item language" data-lang="eng"> <img src="/assets/images/flags/us.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Inglês</span> </a>
+            <a href="/lang/en" class="<?php include resource_path('views/layouts/footer.blade.php');?>" data-lang="eng"> <img src="/assets/images/flags/us.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Inglês</span> </a>
             <!-- item-->
-            <a href="/lang/sp" class="dropdown-item notify-item language" data-lang="sp"> <img src="/assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Espanhol</span> </a>
+            <a href="/lang/sp" class="<?php include resource_path('views/layouts/footer.blade.php');?>" data-lang="sp"> <img src="/assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Espanhol</span> </a>
 
        </div>
         </div>

@@ -137,8 +137,8 @@ $language['500Desc'] = "Vuelva a la página de inicio e intente nuevamente";
 $language['500Button'] = "Regresar a Inicio";
 $language['BlockTitle'] = "Bloquear pantalla";
 $language['BlockDesc'] = "Utilice su contraseña para regresar";
-$idioma['BlockUserName'] = "Nombre de usuario";
-$idioma['Senha'] = "Contraseña";
-$idioma['Unlock'] = "Desbloquear";
-$idioma['Settings'] = "Ajustes";
+$language['BlockUserName'] = "Nombre de usuario";
+$language['Senha'] = "Contraseña";
+$language['Unlock'] = "Desbloquear";
+$language['Settings'] = "Ajustes";
 ?>
