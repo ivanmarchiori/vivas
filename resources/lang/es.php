@@ -122,14 +122,23 @@ $language['Settings_'] = "Ajustes";
 $language['Lock_screen'] = "Bloquear pantalla";
 $language['Logout'] = "Cerrar sesión";
 $language['Apps'] = "Aplicaciones";
-
-
 $language['Search'] = "Buscar...";
 $language['SeeMore'] = "Vea mas";
 $language['MarkView'] = "Marcar como leído";
 $language['new'] = "Nuevo";
-
-
 $language['YouareLoggedOut'] = "Estás desconectado";
 $language['Thankyouforusing'] = "Gracias por usar";
 $language['SignIn'] = "Iniciar sesión";
+$language['404Title'] = "Lo sentimos, la página no existe";
+$language['404Desc'] = "Haga clic en el botón de abajo y regrese a nuestra página de inicio";
+$language['404Button'] = "Regresar a Inicio";
+$language['500Title'] = "Lo sentimos, se produjo un error en su página.";
+$language['500Desc'] = "Vuelva a la página de inicio e intente nuevamente";
+$language['500Button'] = "Regresar a Inicio";
+$language['BlockTitle'] = "Bloquear pantalla";
+$language['BlockDesc'] = "Utilice su contraseña para regresar";
+$idioma['BlockUserName'] = "Nombre de usuario";
+$idioma['Senha'] = "Contraseña";
+$idioma['Unlock'] = "Desbloquear";
+$idioma['Settings'] = "Ajustes";
+?>

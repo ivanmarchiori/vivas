@@ -117,20 +117,27 @@ $language['3_days_ago'] = "3 days ago";
 $language['View_All'] = "View All";
 $language['My_Account'] = "My Account";
 $language['Chat'] = "Chat";
-$language['Support'] = "Support";
-$language['Settings'] = "Settings";
-$language['Lock_screen'] = "Lock screen";
+$language['Support'] = "Suport";
+$language['Settings'] = "Setup";
+$language['Lock_screen'] = "Block";
 $language['Logout'] = "Logout";
-$language['Apps'] = "Apps";
-
-
+$language['Apps'] = "Applications";
 $language['Search'] = "Search...";
 $language['SeeMore'] = "See more";
-$language['MarkView'] = "Mark as Read";
+$language['MarkView'] = "Mark as read";
 $language['new'] = "New";
-
-
-
-$language['YouareLoggedOut'] = "You are Logged Out";
+$language['YouareLoggedOut'] = "Successfully disconnected";
 $language['Thankyouforusing'] = "Thank you for using";
-$language['SignIn'] = "Sign In";
+$language['SignIn'] = "Start Session";
+$language['404Title'] = "Sorry, page does not exist";
+$language['404Desc'] = "Click the button below and go back to our home page";
+$language['404Button'] = "Return to Home page";
+$language['500Title'] = "Sorry, an error occurred on your page.";
+$language['500Desc'] = "Go back to the home page and try again";
+$language['500Button'] = "Back to Home";
+$language['BlockTitle'] = "Block Screen";
+$language['BlockDesc'] = "Use your password to return";
+$language['BlockUserName'] = "User Name";
+$language['Senha'] = "Password";
+$language['Unlock'] = "Unlock";
+?>

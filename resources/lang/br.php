@@ -115,7 +115,6 @@ $language['Salena_Layfield'] = "Nome Completo";
 $language['Yay_Everything_worked'] = "Sim, tudo funcionou";
 $language['3_days_ago'] = "3 dias atrás";
 $language['View_All'] = "Ver tudo";
-
 $language['My_Account'] = "Minha Conta";
 $language['Chat'] = "Chat";
 $language['Support'] = "Suporte";
@@ -123,31 +122,19 @@ $language['Settings'] = "Configurações";
 $language['Lock_screen'] = "Tela de bloqueio";
 $language['Logout'] = "Sair";
 $language['Apps'] = "Aplicativos";
-
 $language['Search'] = "Pesquisar...";
 $language['SeeMore'] = "Veja Mais";
 $language['MarkView'] = "Marcar como Lida";
 $language['new'] = "Novo";
-
-
 $language['YouareLoggedOut'] = "Desconectado com sucesso";
 $language['Thankyouforusing'] = "Obrigado por utilizar";
 $language['SignIn'] = "Iniciar Sessão";
-
-
-$language['SignIn'] = "Iniciar Sessão";
-
-
-
 $language['404Title'] = "Desculpe, página não existe";
 $language['404Desc'] = "Clique no botão abaixo e volta para nossa página inicial";
 $language['404Button'] = "Volta para Página inicial";
-
 $language['500Title'] = "Desculpe, ocorreu um erro em sua página.";
 $language['500Desc'] = "Volte a página inicial e tente novamente";
 $language['500Button'] = "Volta para Página inicial";
-
-
 $language['BlockTitle'] = "Tela de Bloqueio";
 $language['BlockDesc'] = "Use sua senha para voltar";
 $language['BlockUserName'] = "Nome do Usuário";
