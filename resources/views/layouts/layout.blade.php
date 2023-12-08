@@ -1,8 +1,13 @@
 <?php
+use Illuminate\Support\Facades\App;
+$lang = App::make('lang');
+$language = App::make('language');
+?>
+<?php
 include resource_path('views/layouts/head-main.blade.php');
 ?>
 <head>
-    <title><?php echo $language["Login"]; ?> | e-VIVAS - Aproximando e Projetando Sonhos</title>
+    <title><?php echo $language["Login"]; ?> | {{$language['NomeEmpresa'] }} - Aproximando e Projetando Sonhos</title>
     <?php include resource_path('views/layouts/head.blade.php'); ?>
     <?php include resource_path('views/layouts/head-style.blade.php'); ?>
 </head>

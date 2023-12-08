@@ -12,12 +12,12 @@ class NotesController extends Controller
     public function index()
     {
         $canal = 'notes';
-        return view('notes', ['canal' => $canal]);
+        return view('notes.notes', ['canal' => $canal]);
     }
     public function read()
     {
         $canal = 'read notes';
-        return view('notes-read', ['canal' => $canal]);
+        return view('notes.notes-read', ['canal' => $canal]);
     }
 
     /**

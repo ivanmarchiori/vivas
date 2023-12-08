@@ -1,10 +1,4 @@
-/*
-Template Name: e-VIVAS - Aproximando e Projetando Sonhos
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: chartjs init js
-*/
+
 
 
 // get colors array from the string

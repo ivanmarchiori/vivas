@@ -1,10 +1,3 @@
-/*
-Template Name: e-VIVAS - Aproximando e Projetando Sonhos
-Author: Themesbrand
-Website: https://Themesbrand.com/
-Contact: Themesbrand@gmail.com
-File: coming soon Init Js File
-*/
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -42,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Output the result in an element with id="countDownBlock"
         document.getElementById("countdown").innerHTML = countDownBlock;
 
-        // If the count down is over, write some text 
+        // If the count down is over, write some text
         if (distance < 0) {
             clearInterval(countDown);
             document.getElementById("countdown").innerHTML = '<div class="countdown-endtxt">The countdown has ended!</div>';

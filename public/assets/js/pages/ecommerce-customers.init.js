@@ -1,10 +1,4 @@
-/*
-Template Name: e-VIVAS - Aproximando e Projetando Sonhos
-Author: Themesbrand
-Website: https://Themesbrand.com/
-Contact: Themesbrand@gmail.com
-File: Ecommerce customers Js File
-*/
+
 
 // Basic Table
 new gridjs.Grid({
@@ -26,7 +20,7 @@ new gridjs.Grid({
           return gridjs.html('<p class="mb-1">'+ cell[0] +'</p><p class="mb-0">'+ cell[1] +'</p>');
         })
       },
-      
+
       , "Address",
 
       {
@@ -35,7 +29,7 @@ new gridjs.Grid({
           return gridjs.html('<span class="badge bg-success font-size-12"><i class="mdi mdi-star me-1"></i>' + cell +'</span>');
         })
       },
-      
+
       "Wallet Balance", "Joining Date",
       {
         name: "Action",

@@ -1,10 +1,4 @@
-/*
-Template Name: e-VIVAS - Aproximando e Projetando Sonhos
-Author: Themesbrand
-Website: https://Themesbrand.com/
-Contact: Themesbrand@gmail.com
-File: invoive list  Js File
-*/
+
 
 
 
@@ -27,17 +21,17 @@ new gridjs.Grid({
             return gridjs.html('<span class="fw-semibold">' + cell + '</span>');
           })
         },
-         "Date", "Billing Name", "Amount", 
+         "Date", "Billing Name", "Amount",
         {
           name: 'Status',
           formatter: (function (cell) {
             switch (cell) {
               case "Paid":
                 return gridjs.html('<span class="badge rounded-pill  bg-success-subtle text-success  font-size-12">' + cell + '</span>');
-  
+
               case "Pending":
                 return gridjs.html('<span class="badge rounded-pill  bg-warning-subtle text-warning font-size-12">' + cell + '</span>');
-  
+
               default:
                 return gridjs.html('<span class="badge rounded-pill  bg-success-subtle text-success  font-size-12">' + cell + '</span>');
             }
@@ -77,10 +71,10 @@ new gridjs.Grid({
       ["", "#SK4125",  "07 Oct, 2021",  "Barbara Torres",   "$42.63",  "Paid",      "View Details"],
       ["", "#SK6523",  "08 Oct, 2021",  "Daniel Rigney",    "$32.54",  "Pending",   "View Details"],
       ["", "#SK6563",  "09 Oct, 2021",  "Kenneth Linck",    "$52.62",  "Pending",   "View Details"],
-  
+
     ]
   }).render(document.getElementById("table-invoices-list"));
-  
+
 
 // Range datepicker
 flatpickr('#datepicker-range', {
@@ -90,7 +84,7 @@ flatpickr('#datepicker-range', {
 // Invoice date
 
 flatpickr('#datepicker-invoice');
-    
+
 // form step wizard
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab

@@ -20,7 +20,7 @@ $language = App::make('language');
 
                 <!-- start page title -->
                 <?php
-                $maintitle = "e-VIVAS";
+                $maintitle = $language['NomeEmpresa'] ;
                 $title = 'Notes';
                 ?>
                 <?php
@@ -479,7 +479,7 @@ $language = App::make('language');
             </div>
         </div>
 
-        <?php include resource_path('views/layouts/footer.php');?>
+        <?php include resource_path('views/layouts/footer.blade.php');?>
     </div>
     <!-- end main content-->
 

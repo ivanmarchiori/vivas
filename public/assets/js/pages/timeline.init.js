@@ -1,10 +1,4 @@
-/*
-Template Name: e-VIVAS - Aproximando e Projetando Sonhos
-Author: Themesbrand
-Website: https://Themesbrand.com/
-Contact: Themesbrand@gmail.com
-File: Timeline Init Js File
-*/
+
 
 var swiper = new Swiper(".slider", {
     slidesPerView: 1,
@@ -20,7 +14,7 @@ var swiper = new Swiper(".slider", {
             slidesPerView: 4,
         },
     },
-}); 
+});
 
 var swiper = new Swiper("#timeline-card-slider", {
     slidesPerView: 1,
@@ -36,4 +30,4 @@ var swiper = new Swiper("#timeline-card-slider", {
             slidesPerView: 5,
         },
     },
-}); 
+});

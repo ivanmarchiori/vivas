@@ -12,7 +12,7 @@ class BlockController extends Controller
     public function index()
     {
        $canal = 'block';
-       return view('block',['canal'=>$canal]);
+       return view('block.block',['canal'=>$canal]);
     }
 
     /**

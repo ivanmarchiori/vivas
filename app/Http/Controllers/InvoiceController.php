@@ -12,12 +12,12 @@ class InvoiceController extends Controller
     public function index()
     {
         $canal = 'invoiced';
-        return view('invoice', ['canal' => $canal]);
+        return view('invoice.invoice', ['canal' => $canal]);
     }
     public function details($id)
     {
         $canal = 'invoice details';
-        return view('invoice-details', ['canal' => $canal,'id' => $id]);
+        return view('invoice.invoice-details', ['canal' => $canal,'id' => $id]);
     }
     /**
      * Show the form for creating a new resource.

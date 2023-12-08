@@ -1,11 +1,4 @@
-/*
-Template Name: e-VIVAS - Aproximando e Projetando Sonhos
-Author: Themesbrand
-Version: 1.0.0
-Website: https://Themesbrand.com/
-Contact: Themesbrand@gmail.com
-File: Main Css File
-*/
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;400;500;600;700&display=swap");
 #page-topbar {
   position: fixed;
@@ -5494,7 +5487,7 @@ body[data-layout=horizontal] .chat-conversation {
 .profile-content {
   position: relative;
   margin-top: -60px;
-}}
+}
 
 .profile-content {
   position: relative;

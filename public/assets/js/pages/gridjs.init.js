@@ -1,10 +1,4 @@
-/*
-Template Name: e-VIVAS - Aproximando e Projetando Sonhos
-Author: Themesbrand
-Website: https://Themesbrand.com/
-Contact: Themesbrand@gmail.com
-File: grid Js File
-*/
+
 
 // Basic Table
 new gridjs.Grid({
@@ -143,8 +137,8 @@ new gridjs.Grid({
 
 // Hidden Columns
 new gridjs.Grid({
-    columns: ["Name", "Email", "Position", "Company", 
-    { 
+    columns: ["Name", "Email", "Position", "Company",
+    {
         name: 'Country',
         hidden: true
     },],

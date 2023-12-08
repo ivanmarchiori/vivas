@@ -1,12 +1,4 @@
 
-/*
-Template Name: e-VIVAS - Aproximando e Projetando Sonhos
-Author: Themesbrand
-Website: https://Themesbrand.com/
-Contact: Themesbrand@gmail.com
-File: product range slider init js
-*/
-
 
 var slider = document.getElementById('priceslider');
 

@@ -8,7 +8,7 @@
                         <img src="/assets/images/logo-sm.svg" alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="/assets/images/logo-sm.svg" alt="" height="22"> <span class="logo-txt">e-VIVAS</span>
+                        <img src="/assets/images/logo-sm.svg" alt="" height="22"> <span class="logo-txt">{{$language['NomeEmpresa'] }}</span>
                     </span>
                 </a>
 
@@ -17,7 +17,7 @@
                         <img src="/assets/images/logo-sm.svg" alt="" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="/assets/images/logo-sm.svg" alt="" height="22"> <span class="logo-txt">e-VIVAS</span>
+                        <img src="/assets/images/logo-sm.svg" alt="" height="22"> <span class="logo-txt">{{$language['NomeEmpresa'] }}</span>
                     </span>
                 </a>
             </div>

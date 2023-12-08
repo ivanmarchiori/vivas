@@ -15,7 +15,7 @@ class HomeController extends Controller
     public function index()
     {
         $canal = 'home';
-        return view('home', ['canal' => $canal]);
+        return view('home.home', ['canal' => $canal]);
     }
 
     /**

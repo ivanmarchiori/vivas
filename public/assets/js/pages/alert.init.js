@@ -1,10 +1,4 @@
-/*
-Template Name: e-VIVAS - Aproximando e Projetando Sonhos
-Author: Themesbrand
-Website: https://themesbrand.com/
-Contact: themesbrand@gmail.com
-File: Alert init js
-*/
+
 
 var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
 var alertTrigger = document.getElementById('liveAlertBtn')

@@ -12,7 +12,7 @@ class LogoutController extends Controller
     public function index()
     {
         $canal = 'logout';
-        return view('logout', ['canal' => $canal]);
+        return view('logout.logout', ['canal' => $canal]);
     }
 
     /**

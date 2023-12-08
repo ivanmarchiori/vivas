@@ -1,10 +1,4 @@
-/*
-Template Name: e-VIVAS - Aproximando e Projetando Sonhos
-Author: Themesbrand
-Website: https://Themesbrand.com/
-Contact: Themesbrand@gmail.com
-File: two step verification Init Js File
-*/
+
 
 function moveToNext(elem, count) {
     if (elem.value.length > 0) {

@@ -20,13 +20,14 @@ $language = App::make('language');
 
                 <!-- start page title -->
                 <?php
-                $maintitle = "e-VIVAS";
-                $title = 'Profile Contact';
+                $maintitle = $language['NomeEmpresa'] ;
+                $title = 'Minha Conta';
                 ?>
                 <?php
                 include resource_path('views/layouts/breadcrumb.php');
                 ?>
                 <!-- end page title -->
+
                 <div class="row mb-4">
                     <div class="col-xl-8">
                         <div class="card mb-0">
@@ -637,13 +638,12 @@ $language = App::make('language');
                     </div>
                 </div>
 
-
             </div> <!-- container-fluid -->
         </div>
         <!-- End Page-content -->
 
 
-        <?php include resource_path('views/layouts/footer.php');?>
+        <?php include resource_path('views/layouts/footer.blade.php');?>
     </div>
     <!-- end main content-->
 

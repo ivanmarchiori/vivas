@@ -14,7 +14,7 @@ $language = App::make('language');
 
                     <div class="text-center mb-4">
                         <a href="index.php">
-                            <img src="/assets/images/logo-sm.svg" alt="" height="22"> <span class="logo-txt">e-VIVAS</span>
+                            <img src="/assets/images/logo-sm.svg" alt="" height="22"> <span class="logo-txt">{{$language['NomeEmpresa'] }}</span>
                         </a>
                    </div>
 
@@ -28,7 +28,7 @@ $language = App::make('language');
                                 </div>
                                 <div class="mt-4 pt-2">
                                     <h5><?=$language['YouareLoggedOut']?></h5>
-                                    <p class="text-muted font-size-15"><?=$language['Thankyouforusing']?> <span class="fw-semibold text-dark">e-VIVAS</span></p>
+                                    <p class="text-muted font-size-15"><?=$language['Thankyouforusing']?> <span class="fw-semibold text-dark">{{$language['NomeEmpresa'] }}</span></p>
                                     <div class="mt-4">
                                         <a href="/" class="btn btn-primary w-100 waves-effect waves-light"><?=$language['SignIn']?></a>
                                     </div>
@@ -44,7 +44,7 @@ $language = App::make('language');
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center text-muted p-4">
-                        <p class="text-white-50">© <script>document.write(new Date().getFullYear())</script> e-VIVAS. Desenvolvido para seu Projeto.</p>
+                        <p class="text-white-50">© <script>document.write(new Date().getFullYear())</script> {{$language['NomeEmpresa'] }}. Desenvolvido para seu Projeto.</p>
                     </div>
                 </div>
             </div>

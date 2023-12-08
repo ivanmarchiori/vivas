@@ -1,11 +1,4 @@
-/*
-Template Name: e-VIVAS - Aproximando e Projetando Sonhos
-Author: Themesbrand
-Version: 1.0.0
-Website: https://Themesbrand.com/
-Contact: Themesbrand@gmail.com
-File: Main Js File
-*/
+
 
 
 (function () {

@@ -12,13 +12,13 @@ class ProductsController extends Controller
     public function index()
     {
         $canal = 'products';
-        return view('products', ['canal' => $canal]);
+        return view('products.products', ['canal' => $canal]);
     }
 
     public function details($id)
     {
         $canal = 'details';
-        return view('products-details', ['canal' => $canal, 'id' => $id]);
+        return view('products.products-details', ['canal' => $canal, 'id' => $id]);
     }
 
     /**

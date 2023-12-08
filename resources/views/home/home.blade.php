@@ -20,7 +20,7 @@ $language = App::make('language');
 
                 <!-- start page title -->
                 <?php
-                $maintitle = "e-VIVAS";
+                $maintitle = $language['NomeEmpresa'];
                 $title = 'Bem vindo !';
                 ?>
                 <?php
@@ -46,7 +46,7 @@ $language = App::make('language');
                                         <li><i class="bx bx-polygon font-size-24"></i></li>
                                     </ul>
                                     <div class="main-wid position-relative">
-                                        <h3 class="text-white">e-VIVAS Dashboard</h3>
+                                        <h3 class="text-white">{{$language['NomeEmpresa'] }} - Dashboard</h3>
 
                                         <h3 class="text-white mb-0"> Seja bem vindo, Ivan Marchiori</h3>
 
@@ -1106,7 +1106,7 @@ $language = App::make('language');
         <!-- End Page-content -->
 
 
-        <?php include resource_path('views/layouts/footer.php');?>
+        <?php include resource_path('views/layouts/footer.blade.php');?>
     </div>
     <!-- end main content-->
 

@@ -1,4 +1,5 @@
 <?php
+    $language['NomeEmpresa'] = "e-VIVAS";
     $language['Menu'] = "Speisekarte";
     $language['Dashboard'] = "Armaturenbrett";
     $language['Applications'] = "Anwendungen";

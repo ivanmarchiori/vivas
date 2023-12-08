@@ -1,17 +1,5 @@
 @charset "UTF-8";
-/*
-Template Name: e-VIVAS - Aproximando e Projetando Sonhos
-Author: Themesbrand
-Version: 1.0.0
-Website: https://Themesbrand.com/
-Contact: Themesbrand@gmail.com
-File: Custom Bootstrap Css File
-*/
-/*!
- * Bootstrap  v5.3.2 (https://getbootstrap.com/)
- * Copyright 2011-2023 The Bootstrap Authors
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 :root,
 [data-bs-theme=light] {
   --bs-blue: #C8BEAE;

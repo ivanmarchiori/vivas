@@ -1,4 +1,5 @@
 <?php
+$language['NomeEmpresa'] = "e-VIVAS";
 $language['Menu'] = "Menu";
 $language['Dashboard'] = "Dashboard";
 $language['Applications'] = "Applications";
@@ -133,4 +134,3 @@ $language['new'] = "New";
 $language['YouareLoggedOut'] = "You are Logged Out";
 $language['Thankyouforusing'] = "Thank you for using";
 $language['SignIn'] = "Sign In";
-?>

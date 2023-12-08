@@ -14,7 +14,7 @@ $language = App::make('language');
 
                    <div class="text-center mb-4">
                         <a href="/">
-                            <img src="/assets/images/logo-sm.svg" alt="" height="22"> <span class="logo-txt">e-VIVAS</span>
+                            <img src="/assets/images/logo-sm.svg" alt="" height="22"> <span class="logo-txt">{{$language['NomeEmpresa'] }}</span>
                         </a>
                    </div>
 
@@ -22,7 +22,7 @@ $language = App::make('language');
                         <div class="card-body p-4">
                             <div class="text-center mt-2">
                                 <h5 class="text-primary">Welcome Back !</h5>
-                                <p class="text-muted">Sign in to continue to e-VIVAS.</p>
+                                <p class="text-muted">Sign in to continue to {{$language['NomeEmpresa'] }}.</p>
                             </div>
                             <div class="p-2 mt-4">
                                 <form action="/">
@@ -88,7 +88,7 @@ $language = App::make('language');
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center text-muted p-4">
-                        <p class="text-white-50">© <script>document.write(new Date().getFullYear())</script> e-VIVAS. Desenvolvido para seu Projeto.</p>
+                        <p class="text-white-50">© <script>document.write(new Date().getFullYear())</script> {{$language['NomeEmpresa'] }}. Desenvolvido para seu Projeto.</p>
                     </div>
                 </div>
             </div>
