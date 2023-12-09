@@ -3,7 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-//use App\Providers\LanguageServiceProvider;
+//use App\Providers\langProvider;
 
 
 
@@ -14,7 +14,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-       // $this->app->register(LanguageServiceProvider::class);
+       // $this->app->register(langProvider::class);
     }
 
     /**

@@ -6,12 +6,6 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
-    private $languageService;
-
-
     public function index()
     {
         $canal = 'home';
