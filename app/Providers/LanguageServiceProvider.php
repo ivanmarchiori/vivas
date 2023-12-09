@@ -19,6 +19,7 @@ class LanguageServiceProvider extends ServiceProvider
             $lang = session('lang');
         } else {
             $lang = "br";
+            session(['lang' => $lang]);
         }
 
         $languageFile = resource_path("lang/{$lang}.php");
@@ -37,6 +38,6 @@ class LanguageServiceProvider extends ServiceProvider
 
     public function boot()
     {
-        //
+
     }
 }

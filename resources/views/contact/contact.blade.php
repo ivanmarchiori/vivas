@@ -1,9 +1,6 @@
 <?php
-use Illuminate\Support\Facades\App;
-$lang = App::make('lang');
-$language = App::make('language');
+include(resource_path("lang/{$lang}.php"));
 ?>
-
 @extends('layouts.layout')
 @section('conteudo')
 <div id="layout-wrapper">

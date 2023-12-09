@@ -28,14 +28,14 @@
         </div>
         <div class="dropdown d-inline-block language-switch">
           <button type="button" class="btn header-item"
-                      data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="header-lang-img" src="/assets/images/flags/br.jpg" alt="Header Language" height="16"> </button>
+                      data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="header-lang-img" src="/assets/images/flags/<?=$language['flag']?>.jpg" alt="Header Language" height="16"> </button>
           <div class="dropdown-menu dropdown-menu-end">
             <!-- item-->
             <a href="/lang/br" class="dropdown-item notify-item language" data-lang="br"> <img src="/assets/images/flags/br.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Português</span> </a>
             <!-- item-->
-            <a href="/lang/en" class="dropdown-item notify-item language" data-lang="eng"> <img src="/assets/images/flags/us.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Inglês</span> </a>
+            <a href="/lang/en" class="dropdown-item notify-item language" data-lang="en"> <img src="/assets/images/flags/us.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">English</span> </a>
             <!-- item-->
-            <a href="/lang/sp" class="dropdown-item notify-item language" data-lang="sp"> <img src="/assets/images/flags/spain.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Espanhol</span> </a>
+            <a href="/lang/es" class="dropdown-item notify-item language" data-lang="es"> <img src="/assets/images/flags/es.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">Español</span> </a>
 
        </div>
         </div>

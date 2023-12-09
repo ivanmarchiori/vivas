@@ -4,7 +4,7 @@
 <file name="germany.jpg" server="ftp.grafcontrol2.hospedagemdesites.ws/public_html/" local="133450326016294604" remote="133450330340000000" Dst="0" />
 <file name="italy.jpg" server="ftp.grafcontrol2.hospedagemdesites.ws/public_html/" local="133450326016767825" remote="133450330340000000" Dst="0" />
 <file name="russia.jpg" server="ftp.grafcontrol2.hospedagemdesites.ws/public_html/" local="133450326017080417" remote="133450330340000000" Dst="0" />
-<file name="spain.jpg" server="ftp.grafcontrol2.hospedagemdesites.ws/public_html/" local="133450326017392789" remote="133450330340000000" Dst="0" />
+<file name="es.jpg" server="ftp.grafcontrol2.hospedagemdesites.ws/public_html/" local="133450326017392789" remote="133450330340000000" Dst="0" />
 <file name="us.jpg" server="ftp.grafcontrol2.hospedagemdesites.ws/public_html/" local="133450326017710681" remote="133450330340000000" Dst="0" />
 <file name="br.jpg" server="ftp.grafcontrol2.hospedagemdesites.ws/public_html/" local="133452164999206486" remote="133452931510000000" Dst="0" />
 <file name="br.jpg" server="ftp.grafcontrol.com.br/public_html/" local="133452164999206486" remote="133452954000000000" Dst="0" />
@@ -12,6 +12,6 @@
 <file name="germany.jpg" server="ftp.grafcontrol.com.br/public_html/" local="133450326016294604" remote="133452954000000000" Dst="0" />
 <file name="italy.jpg" server="ftp.grafcontrol.com.br/public_html/" local="133450326016767825" remote="133452954000000000" Dst="0" />
 <file name="russia.jpg" server="ftp.grafcontrol.com.br/public_html/" local="133450326017080417" remote="133452954000000000" Dst="0" />
-<file name="spain.jpg" server="ftp.grafcontrol.com.br/public_html/" local="133450326017392789" remote="133452954000000000" Dst="0" />
+<file name="es.jpg" server="ftp.grafcontrol.com.br/public_html/" local="133450326017392789" remote="133452954000000000" Dst="0" />
 <file name="us.jpg" server="ftp.grafcontrol.com.br/public_html/" local="133450326017710681" remote="133452954000000000" Dst="0" />
 </dwsync>

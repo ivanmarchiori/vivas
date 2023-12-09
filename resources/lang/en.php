@@ -1,4 +1,6 @@
 <?php
+$language['flag'] = "us";
+$language['HeaderLanguage'] = "Language";
 $language['NomeEmpresa'] = "e-VIVAS";
 $language['Menu'] = "Menu";
 $language['Dashboard'] = "Dashboard";

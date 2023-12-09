@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 
 class LanguageController extends Controller
@@ -12,6 +11,9 @@ class LanguageController extends Controller
      */
     public function index($lang)
     {
+
+        session(['lang' => $lang]);
+
         // Salvar no banco de dados a preferencia do cliente
         $urlDaPaginaAnterior = URL::previous();
         return redirect()->to($urlDaPaginaAnterior);

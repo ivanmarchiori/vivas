@@ -12,7 +12,7 @@ class HelpController extends Controller
     public function index()
     {
        $canal = 'help';
-       return view('help.help',['canal'=>$canal]);
+       return view('help.help',['canal'=>$canal, 'lang'=>session('lang')]);
     }
 
     /**

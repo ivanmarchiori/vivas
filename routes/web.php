@@ -13,7 +13,7 @@ use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\InvoiceController;
-
+use App\Http\Controllers\LanguageController;
 
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/myaccount', [MyAccountController::class, 'index']);
@@ -44,3 +44,4 @@ Route::group([
     Route::get('/list', [ProductsController::class, 'index'])->name('products');
     Route::get('/details/{id}', [ProductsController::class, 'details']);
 });
+Route::get('/lang/{lang}', [LanguageController::class, 'index']);

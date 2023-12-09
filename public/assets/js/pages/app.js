@@ -32,10 +32,10 @@
                         el.src = "/assets/images/flags/us.jpg";
                         break;
                     case "sp":
-                        el.src = "/assets/images/flags/es.jpg";
+                        el.src = "/assets/images/flags/=es";
                         break;
                     case "es":
-                        el.src = "/assets/images/flags/es.jpg";
+                        el.src = "/assets/images/flags/=es";
                         break;
                     case "gr":
                         el.src = "/assets/images/flags/germany.jpg";

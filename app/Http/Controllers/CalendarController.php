@@ -12,7 +12,7 @@ class CalendarController extends Controller
     public function index()
     {
        $canal = 'calendar';
-       return view('calendar.calendar',['canal'=>$canal]);
+       return view('calendar.calendar',['canal'=>$canal, 'lang'=>session('lang')]);
     }
 
     /**

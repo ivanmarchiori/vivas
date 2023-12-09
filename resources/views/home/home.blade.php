@@ -1,7 +1,5 @@
 <?php
-use Illuminate\Support\Facades\App;
-$lang = App::make('lang');
-$language = App::make('language');
+include(resource_path("lang/{$lang}.php"));
 ?>
 
 @extends('layouts.layout')
@@ -21,7 +19,7 @@ $language = App::make('language');
                 <!-- start page title -->
                 <?php
                 $maintitle = $language['NomeEmpresa'];
-                $title = 'Bem vindo !';
+                $title = 'Bem vindo !'.$lang;
                 ?>
                 <?php
                 include resource_path('views/layouts/breadcrumb.php');
@@ -755,7 +753,7 @@ $language = App::make('language');
                                             </tr>
 
                                             <tr>
-                                                <td><img src="/assets/images/flags/spain.jpg" alt="user-image" class="me-3" height="18">Spain</td>
+                                                <td><img src="/assets/images/flags/es.jpg" alt="user-image" class="me-3" height="18">Spain</td>
                                                 <td>
                                                     75,521.28
                                                 </td>

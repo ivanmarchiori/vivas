@@ -12,7 +12,7 @@ class MyAccountController extends Controller
     public function index()
     {
         $canal = 'myaccount';
-        return view('myaccount.myaccount', ['canal' => $canal]);
+        return view('myaccount.myaccount', ['canal' => $canal, 'lang'=>session('lang')]);
     }
 
     /**

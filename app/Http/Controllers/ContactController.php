@@ -12,22 +12,22 @@ class ContactController extends Controller
     public function index()
     {
        $canal = 'contact';
-       return view('contact.contact-list',['canal'=>$canal]);
+       return view('contact.contact-list',['canal'=>$canal, 'lang'=>session('lang')]);
     }
     public function list()
     {
        $canal = 'contact List';
-       return view('contact.contact-list',['canal'=>$canal]);
+       return view('contact.contact-list',['canal'=>$canal, 'lang'=>session('lang')]);
     }
     public function grid()
     {
        $canal = 'contact Grid';
-       return view('contact.contact-grid',['canal'=>$canal]);
+       return view('contact.contact-grid',['canal'=>$canal, 'lang'=>session('lang')]);
     }
     public function profile()
     {
        $canal = 'Profile';
-       return view('contact.contact-profile',['canal'=>$canal]);
+       return view('contact.contact-profile',['canal'=>$canal, 'lang'=>session('lang')]);
     }
 
     /**
