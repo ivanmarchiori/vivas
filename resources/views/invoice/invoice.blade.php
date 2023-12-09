@@ -23,7 +23,7 @@ include(resource_path("lang/{$lang}.php"));
                 <!-- start page title -->
                 <?php
                 $maintitle = $language['NomeEmpresa'] ;
-                $title = 'Invoice';
+                $title = $language['Invoices'] ;
                 ?>
                 <?php
                 include resource_path('views/layouts/breadcrumb.php');

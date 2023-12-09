@@ -12,6 +12,9 @@ class HelpController extends Controller
     public function index()
     {
        $canal = 'help';
+       if (session()->missing('lang')) {
+           session(['lang' => 'br']);
+       }
        return view('help.help',['canal'=>$canal, 'lang'=>session('lang')]);
     }
 

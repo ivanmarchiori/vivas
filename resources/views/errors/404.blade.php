@@ -1,5 +1,5 @@
 <?php
-include(resource_path("lang/{$lang}.php"));
+include(resource_path("lang/br.php"));
 ?>
 
 @extends('layouts.layout')

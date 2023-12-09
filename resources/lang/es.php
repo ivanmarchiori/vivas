@@ -21,7 +21,7 @@ $language['Checkout'] = "Verificar";
 $language['Shops'] = "Tiendas";
 $language['Add_Product'] = "Agregar producto";
 $language['Invoices'] = "Facturas";
-$language['Invoice_List'] = "Lista de facturas";
+$language['Invoices_List'] = "Lista de facturas";
 $language['Invoice_Detail'] = "Detalle de la factura";
 $language['Contacts'] = "Contactos";
 $language['User_Grid'] = "Cuadrícula de usuario";
@@ -143,4 +143,42 @@ $language['BlockUserName'] = "Nombre de usuario";
 $language['Senha'] = "Contraseña";
 $language['Unlock'] = "Desbloquear";
 $language['Settings'] = "Ajustes";
+$language['Help'] = "Ayuda";
+$language['HomePage'] = "Bienvenido, ";
+
+
+$language['LoginWelcome'] = "¡Bienvenido de nuevo!";
+$language['LoginSignTitle'] = "Inicie sesión para continuar";
+$language['LoginUser'] = "Nombre de usuario";
+$language['LoginForgot'] = "¿Olvidó su contraseña?";
+$language['LoginPassword'] = "Contraseña";
+$language['LoginRemember'] = "Recordarme";
+$language['LoginLog'] = "Iniciar sesión";
+$language['LoginSign'] = "Iniciar sesión con";
+$language['LoginDont'] = "¿No tienes una cuenta?";
+$language['LoginSignup'] = "Regístrese ahora";
+
+$language['RecoverResetPassword'] = "Restablecer contraseña";
+$language['RecoverReset'] = "Restablecer contraseña con e-VIVAS.";
+$language['RecoverEnterEmail'] = "¡Ingrese su correo electrónico y se le enviarán instrucciones!";
+$language['RecoverEmail'] = "Correo electrónico.";
+$language['RecoverReset'] = "Restablecer.";
+$language['RecoverRemember'] = "¿Recuerdas?";
+$language['RecoverSign'] = "Iniciar sesión.";
+
+$language['RegisterRegisterTitle'] = "Registrar cuenta";
+$language['RegisterGet'] = "Obtenga su cuenta e-VIVAS gratuita ahora.";
+$language['RegisterEmail'] = "Correo electrónico";
+$language['RegisterUsername'] = "Nombre de usuario";
+$language['RegisterPassword'] = "Contraseña";
+$language['RegisterI'] = "Acepto";
+$language['RegisterTerms'] = "Términos y condiciones";
+$language['RegisterRegister'] = "Registrarse";
+$language['RegisterSign'] = "Iniciar sesión con";
+$language['RegisterAlready'] = "¿Ya tienes una cuenta?";
+$language['RegisterLogin'] = "Iniciar sesión";
+
+$language['Slogan'] = "Desenvolvido para su proyecto.";
+
+
 ?>

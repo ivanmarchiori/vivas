@@ -98,7 +98,7 @@
                         <span class="menu-item" data-key="t-invoices"><?php echo $language["Invoices"]; ?></span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="/invoice" data-key="t-invoice-list"><?php echo $language["Invoice_List"]; ?></a></li>
+                        <li><a href="/invoice" data-key="t-invoice-list"><?php echo $language["Invoices_List"]; ?></a></li>
                         <li><a href="/invoice/details/1" data-key="t-invoice-detail"><?php echo $language["Invoice_Detail"]; ?></a></li>
                     </ul>
                 </li>

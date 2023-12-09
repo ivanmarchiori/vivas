@@ -75,7 +75,7 @@
                                             role="button"><span data-key="t-invoices"><?php echo $language["Invoices"]; ?></span> <div class="arrow-down"></div>
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="topnav-invoice">
-                                            <a href="/invoice" class="dropdown-item" data-key="t-invoice-list"><?php echo $language["Invoice_List"]; ?></a>
+                                            <a href="/invoice" class="dropdown-item" data-key="t-invoice-list"><?php echo $language["Invoices_List"]; ?></a>
                                             <a href="/invoice/details/1" class="dropdown-item" data-key="t-invoice-detail"><?php echo $language["Invoice_Detail"]; ?></a>
                                         </div>
                                     </div>

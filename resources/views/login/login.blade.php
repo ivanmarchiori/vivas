@@ -19,37 +19,37 @@ include(resource_path("lang/{$lang}.php"));
                     <div class="card">
                         <div class="card-body p-4">
                             <div class="text-center mt-2">
-                                <h5 class="text-primary">Welcome Back !</h5>
-                                <p class="text-muted">Sign in to continue to {{$language['NomeEmpresa'] }}.</p>
+                                <h5 class="text-primary">{{$language['LoginWelcome']}}</h5>
+                                <p class="text-muted">{{$language['LoginSignTitle']}} {{$language['NomeEmpresa'] }}.</p>
                             </div>
                             <div class="p-2 mt-4">
                                 <form action="/">
 
                                     <div class="mb-3">
-                                        <label class="form-label" for="username">Username</label>
+                                        <label class="form-label" for="username">{{$language['LoginUser']}}</label>
                                         <input type="text" class="form-control" id="username" placeholder="Enter username">
                                     </div>
 
                                     <div class="mb-3">
                                         <div class="float-end">
-                                            <a href="page-recoverpw.php" class="text-muted">Forgot password?</a>
+                                            <a href="/login/recoverpw" class="text-muted">{{$language['LoginForgot']}}</a>
                                         </div>
-                                        <label class="form-label" for="userpassword">Password</label>
+                                        <label class="form-label" for="userpassword">{{$language['LoginPassword']}}</label>
                                         <input type="password" class="form-control" id="userpassword" placeholder="Enter password">
                                     </div>
 
                                     <div class="form-check">
                                         <input type="checkbox" class="form-check-input" id="auth-remember-check">
-                                        <label class="form-check-label" for="auth-remember-check">Remember me</label>
+                                        <label class="form-check-label" for="auth-remember-check">{{$language['LoginRemember']}}</label>
                                     </div>
 
                                     <div class="mt-3 text-end">
-                                        <button class="btn btn-primary w-sm waves-effect waves-light" type="submit">Log In</button>
+                                        <button class="btn btn-primary w-sm waves-effect waves-light" type="submit">{{$language['LoginLog']}}</button>
                                     </div>
 
                                     <div class="mt-4 text-center">
                                         <div class="signin-other-title">
-                                            <h5 class="font-size-14 mb-3 title">Sign in with</h5>
+                                            <h5 class="font-size-14 mb-3 title">{{$language['LoginSign']}}</h5>
                                         </div>
 
                                         <ul class="list-inline">
@@ -72,7 +72,7 @@ include(resource_path("lang/{$lang}.php"));
                                     </div>
 
                                     <div class="mt-4 text-center">
-                                        <p class="mb-0">Don't have an account ? <a href="page-register.php" class="fw-medium text-primary"> Signup now </a> </p>
+                                        <p class="mb-0">{{$language['LoginDont']}} <a href="/login/register" class="fw-medium text-primary"> {{$language['LoginSign']}} </a> </p>
                                     </div>
                                 </form>
                             </div>
@@ -86,7 +86,7 @@ include(resource_path("lang/{$lang}.php"));
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center text-muted p-4">
-                        <p class="text-white-50">© <script>document.write(new Date().getFullYear())</script> {{$language['NomeEmpresa'] }}. Desenvolvido para seu Projeto.</p>
+                        <p class="text-white-50">© <script>document.write(new Date().getFullYear())</script> {{$language['NomeEmpresa'] }}. {{$language['Slogan']}}</p>
                     </div>
                 </div>
             </div>

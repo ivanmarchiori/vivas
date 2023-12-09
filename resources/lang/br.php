@@ -21,7 +21,7 @@ $language['Checkout'] = "Pagamento";
 $language['Shops'] = "Lojas";
 $language['Add_Product'] = "Adicionar Produto";
 $language['Invoices'] = "Faturas";
-$language['Invoice_List'] = "Lista de Faturas";
+$language['Invoices_List'] = "Lista de Faturas";
 $language['Invoice_Detail'] = "Detalhes da Fatura";
 $language['Contacts'] = "Contatos";
 $language['User_Grid'] = "Grade";
@@ -142,4 +142,42 @@ $language['BlockDesc'] = "Use sua senha para voltar";
 $language['BlockUserName'] = "Nome do Usuário";
 $language['Senha'] = "Senha";
 $language['Unlock'] = "Desbloquear";
+$language['Help'] = "Ajuda";
+$language['HomePage'] = "Seja Bem Vindo (a) ";
+
+$language['LoginWelcome'] = "Bem vindo de volta!";
+$language['LoginSignTitle'] = "Faça login para continuar";
+$language['LoginUser'] = "Nome de usuário";
+$language['LoginForgot'] = "Esqueceu a senha?";
+$language['LoginPassword'] = "Senha";
+$language['LoginRemember'] = "Lembrar de mim";
+$language['LoginLog'] = "Login";
+$language['LoginSign'] = "Entrar com";
+$language['LoginDont'] = "Não tem uma conta?";
+$language['LoginSignup'] = "Inscreva-se agora";
+
+$language['RecoverResetPassword'] = "Redefinir senha";
+$language['RecoverReset'] = "Redefinir senha com e-VIVAS.";
+$language['RecoverEnterEmail'] = "Digite seu e-mail e as instruções serão enviadas para você!";
+$language['RecoverEmail'] = "E-mail.";
+$language['RecoverReset'] = "Redefinir.";
+$language['RecoverRemember'] = "Lembra-se disso? .";
+$language['RecoverSign'] = "Entrar.";
+
+$language['RegisterRegisterTitle'] = "Registrar conta";
+$language['RegisterGet'] = "Obtenha sua conta e-VIVAS gratuita agora.";
+$language['RegisterEmail'] = "E-mail";
+$language['RegisterUsername'] = "Nome de usuário";
+$language['RegisterPassword'] = "Senha";
+$language['RegisterI'] = "Aceito";
+$language['RegisterTerms'] = "Termos e Condições";
+$language['RegisterRegister'] = "Registrar";
+$language['RegisterSign'] = "Entrar com";
+$language['RegisterAlready'] = "Já tem uma conta? ";
+$language['RegisterLogin'] = "Login";
+
+
+
+$language['Slogan'] = " Desenvolvido para seu Projeto.";
+
 ?>

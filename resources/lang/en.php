@@ -21,7 +21,7 @@ $language['Checkout'] = "Checkout";
 $language['Shops'] = "Shops";
 $language['Add_Product'] = "Add Product";
 $language['Invoices'] = "Invoices";
-$language['Invoice_List'] = "Invoice List";
+$language['Invoices_List'] = "Invoice List";
 $language['Invoice_Detail'] = "Invoice Detail";
 $language['Contacts'] = "Contacts";
 $language['User_Grid'] = "User Grid";
@@ -142,4 +142,44 @@ $language['BlockDesc'] = "Use your password to return";
 $language['BlockUserName'] = "User Name";
 $language['Senha'] = "Password";
 $language['Unlock'] = "Unlock";
+$language['Help'] = "Support";
+$language['HomePage'] = "Welcome, ";
+
+
+$language['LoginWelcome'] = "Welcome back!";
+$language['LoginSignTitle'] = "Login to continue";
+$language['LoginUser'] = "Username";
+$language['LoginForgot'] = "Forgot your password?";
+$language['LoginPassword'] = "Password";
+$language['LoginRemember'] = "Remember me";
+$language['LoginLog'] = "Login";
+$language['LoginSign'] = "Login with";
+$language['LoginDont'] = "Don't have an account?";
+$language['LoginSignup'] = "Sign up now";
+
+
+$language['RecoverResetPassword'] = "ResetPassword";
+$language['RecoverReset'] = "Reset Password with e-VIVAS.";
+$language['RecoverEnterEmail'] = "Enter your Email and instructions will be sent to you!.";
+$language['RecoverEmail'] = "Email";
+$language['RecoverReset'] = "Reset.";
+$language['RecoverRemember'] = "Remember It ? .";
+$language['RecoverSign'] = "Sign in.";
+
+
+$language['RegisterRegisterTitle'] = "Register Account";
+$language['RegisterGet'] = "Get your free e-VIVAS account now.";
+$language['RegisterEmail'] = "Email";
+$language['RegisterUsername'] = "Username";
+$language['RegisterPassword'] = "Password";
+$language['RegisterI'] = "I accept";
+$language['RegisterTerms'] = "Terms and Conditions";
+$language['RegisterRegister'] = "Register";
+$language['RegisterSign'] = "Sign in with";
+$language['RegisterAlready'] = "Already have an account ? ";
+$language['RegisterLogin'] = "Login";
+
+
+
+$language['Slogan'] = "Desenvolvido para seu Projeto.";
 ?>

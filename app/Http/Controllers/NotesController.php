@@ -12,11 +12,17 @@ class NotesController extends Controller
     public function index()
     {
         $canal = 'notes';
+        if (session()->missing('lang')) {
+            session(['lang' => 'br']);
+        }
         return view('notes.notes', ['canal' => $canal, 'lang'=>session('lang')]);
     }
     public function read()
     {
         $canal = 'read notes';
+        if (session()->missing('lang')) {
+            session(['lang' => 'br']);
+        }
         return view('notes.notes-read', ['canal' => $canal, 'lang'=>session('lang')]);
     }
 

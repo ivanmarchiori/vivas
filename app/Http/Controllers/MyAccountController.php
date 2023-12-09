@@ -12,6 +12,9 @@ class MyAccountController extends Controller
     public function index()
     {
         $canal = 'myaccount';
+        if (session()->missing('lang')) {
+            session(['lang' => 'br']);
+        }
         return view('myaccount.myaccount', ['canal' => $canal, 'lang'=>session('lang')]);
     }
 

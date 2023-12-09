@@ -12,6 +12,9 @@ class LogoutController extends Controller
     public function index()
     {
         $canal = 'logout';
+        if (session()->missing('lang')) {
+            session(['lang' => 'br']);
+        }
         return view('logout.logout', ['canal' => $canal, 'lang'=>session('lang')]);
     }
 

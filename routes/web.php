@@ -23,11 +23,20 @@ Route::get('/calendar', [CalendarController::class, 'index']);
 Route::get('/chat', [ChatController::class, 'index']);
 Route::get('/notes', [NotesController::class, 'index']);
 Route::get('/notes-read', [NotesController::class, 'read']);
-Route::get('/login', [LoginController::class, 'index']);
 Route::get('/logout', [LogoutController::class, 'index']);
 Route::get('/contact', [ContactController::class, 'index']);
 Route::get('/invoice', [InvoiceController::class, 'index']);
 Route::get('/invoice/details/{id}', [InvoiceController::class, 'details']);
+
+Route::group([
+    'prefix' => 'login',
+    'as' => 'login.'
+], function () {
+    Route::get('/', [LoginController::class, 'index'])->name('index');
+    Route::get('/recoverpw', [LoginController::class, 'recoverpw'])->name('recoverpw');
+    Route::get('/register', [LoginController::class, 'register'])->name('register');
+});
+
 Route::group([
     'prefix' => 'contact',
     'as' => 'contact.'
