@@ -12,9 +12,7 @@ class ChatController extends Controller
     public function index()
     {
        $canal = 'chat';
-       if (session()->missing('lang')) {
-           session(['lang' => 'br']);
-       }
+       session(['lang' => auth()->user()->lang]);
        return view('chat.chat',['canal'=>$canal, 'lang'=>session('lang')]);
     }
 

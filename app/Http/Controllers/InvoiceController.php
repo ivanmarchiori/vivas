@@ -12,9 +12,7 @@ class InvoiceController extends Controller
     public function index()
     {
         $canal = 'invoiced';
-        if (session()->missing('lang')) {
-            session(['lang' => 'br']);
-        }
+        session(['lang' => auth()->user()->lang]);
         return view('invoice.invoice', ['canal' => $canal, 'lang'=>session('lang')]);
     }
     public function details($id)

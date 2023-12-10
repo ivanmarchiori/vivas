@@ -12,9 +12,7 @@ class CalendarController extends Controller
     public function index()
     {
        $canal = 'calendar';
-       if (session()->missing('lang')) {
-           session(['lang' => 'br']);
-       }
+       session(['lang' => auth()->user()->lang]);
        return view('calendar.calendar',['canal'=>$canal, 'lang'=>session('lang')]);
     }
 

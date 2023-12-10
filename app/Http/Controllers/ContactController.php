@@ -12,33 +12,25 @@ class ContactController extends Controller
     public function index()
     {
        $canal = 'contact';
-       if (session()->missing('lang')) {
-           session(['lang' => 'br']);
-       }
+       session(['lang' => auth()->user()->lang]);
        return view('contact.contact-list',['canal'=>$canal, 'lang'=>session('lang')]);
     }
     public function list()
     {
        $canal = 'contact List';
-       if (session()->missing('lang')) {
-           session(['lang' => 'br']);
-       }
+       session(['lang' => auth()->user()->lang]);
        return view('contact.contact-list',['canal'=>$canal, 'lang'=>session('lang')]);
     }
     public function grid()
     {
        $canal = 'contact Grid';
-       if (session()->missing('lang')) {
-           session(['lang' => 'br']);
-       }
+       session(['lang' => auth()->user()->lang]);
        return view('contact.contact-grid',['canal'=>$canal, 'lang'=>session('lang')]);
     }
     public function profile()
     {
        $canal = 'Profile';
-       if (session()->missing('lang')) {
-           session(['lang' => 'br']);
-       }
+       session(['lang' => auth()->user()->lang]);
        return view('contact.contact-profile',['canal'=>$canal, 'lang'=>session('lang')]);
     }
 

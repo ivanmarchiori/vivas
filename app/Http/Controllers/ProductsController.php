@@ -12,18 +12,14 @@ class ProductsController extends Controller
     public function index()
     {
         $canal = 'products';
-        if (session()->missing('lang')) {
-            session(['lang' => 'br']);
-        }
+        session(['lang' => auth()->user()->lang]);
         return view('products.products', ['canal' => $canal, 'lang'=>session('lang')]);
     }
 
     public function details($id)
     {
         $canal = 'details';
-        if (session()->missing('lang')) {
-            session(['lang' => 'br']);
-        }
+        session(['lang' => auth()->user()->lang]);
         return view('products.products-details', ['canal' => $canal, 'id' => $id, 'lang'=>session('lang')]);
     }
 

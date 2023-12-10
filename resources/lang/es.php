@@ -131,12 +131,19 @@ $language['new'] = "Nuevo";
 $language['YouareLoggedOut'] = "Estás desconectado";
 $language['Thankyouforusing'] = "Gracias por usar";
 $language['SignIn'] = "Iniciar sesión";
+
 $language['404Title'] = "Lo sentimos, la página no existe";
 $language['404Desc'] = "Haga clic en el botón de abajo y regrese a nuestra página de inicio";
 $language['404Button'] = "Regresar a Inicio";
+
+$language['419Title'] = "Lo sentimos, la página no existe";
+$language['419Desc'] = "Haga clic en el botón de abajo y regrese a nuestra página de inicio";
+$language['419Button'] = "Regresar a Inicio";
+
 $language['500Title'] = "Lo sentimos, se produjo un error en su página.";
 $language['500Desc'] = "Vuelva a la página de inicio e intente nuevamente";
 $language['500Button'] = "Regresar a Inicio";
+
 $language['BlockTitle'] = "Bloquear pantalla";
 $language['BlockDesc'] = "Utilice su contraseña para regresar";
 $language['BlockUserName'] = "Nombre de usuario";
@@ -149,7 +156,7 @@ $language['HomePage'] = "Bienvenido, ";
 
 $language['LoginWelcome'] = "¡Bienvenido de nuevo!";
 $language['LoginSignTitle'] = "Inicie sesión para continuar";
-$language['LoginUser'] = "Nombre de usuario";
+$language['EmailUser'] = "E-mail";
 $language['LoginForgot'] = "¿Olvidó su contraseña?";
 $language['LoginPassword'] = "Contraseña";
 $language['LoginRemember'] = "Recordarme";
@@ -157,6 +164,7 @@ $language['LoginLog'] = "Iniciar sesión";
 $language['LoginSign'] = "Iniciar sesión con";
 $language['LoginDont'] = "¿No tienes una cuenta?";
 $language['LoginSignup'] = "Regístrese ahora";
+$language['LoginEmailSenha']= "Correo electrónico o contraseña no válidos";
 
 $language['RecoverResetPassword'] = "Restablecer contraseña";
 $language['RecoverReset'] = "Restablecer contraseña con e-VIVAS.";
@@ -178,7 +186,7 @@ $language['RegisterSign'] = "Iniciar sesión con";
 $language['RegisterAlready'] = "¿Ya tienes una cuenta?";
 $language['RegisterLogin'] = "Iniciar sesión";
 
-$language['Slogan'] = "Desenvolvido para su proyecto.";
+$language['Slogan'] = "Desarrollado para su Proyecto.";
 
 
 ?>

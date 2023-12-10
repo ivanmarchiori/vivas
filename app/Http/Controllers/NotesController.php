@@ -20,9 +20,7 @@ class NotesController extends Controller
     public function read()
     {
         $canal = 'read notes';
-        if (session()->missing('lang')) {
-            session(['lang' => 'br']);
-        }
+        session(['lang' => auth()->user()->lang]);
         return view('notes.notes-read', ['canal' => $canal, 'lang'=>session('lang')]);
     }
 

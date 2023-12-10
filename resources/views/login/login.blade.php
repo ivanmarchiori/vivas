@@ -1,5 +1,11 @@
 <?php
-include(resource_path("lang/{$lang}.php"));
+$langFile = resource_path("lang/{$lang}.php");
+if (file_exists($langFile)) {
+    include($langFile);
+} else {
+    session(['lang' => 'br']);
+    include(resource_path("lang/br.php"));
+}
 ?>
 @extends('layouts.layout')
 @section('conteudo')
@@ -23,24 +29,30 @@ include(resource_path("lang/{$lang}.php"));
                                 <p class="text-muted">{{$language['LoginSignTitle']}} {{$language['NomeEmpresa'] }}.</p>
                             </div>
                             <div class="p-2 mt-4">
-                                <form action="/">
+                            @if ($mensagem = Session::get('erro'))
+                                @if($mensagem="EmailSenha")
+                                    <div class="alert alert-danger">{{$language['LoginEmailSenha'] }}</div>
+                                @endif
+                            @endif
 
+                                <form action="{{route('login.auth')}}" method="POST">
+                                    @csrf
                                     <div class="mb-3">
-                                        <label class="form-label" for="username">{{$language['LoginUser']}}</label>
-                                        <input type="text" class="form-control" id="username" placeholder="Enter username">
+                                        <label class="form-label" for="email">{{$language['EmailUser']}}</label>
+                                        <input type="text" class="form-control" name="email" id="email" required placeholder="{{$language['EmailUser']}}">
                                     </div>
 
                                     <div class="mb-3">
                                         <div class="float-end">
                                             <a href="/login/recoverpw" class="text-muted">{{$language['LoginForgot']}}</a>
                                         </div>
-                                        <label class="form-label" for="userpassword">{{$language['LoginPassword']}}</label>
-                                        <input type="password" class="form-control" id="userpassword" placeholder="Enter password">
+                                        <label class="form-label" for="password">{{$language['LoginPassword']}}</label>
+                                        <input type="password" class="form-control" required name="password" id="password" placeholder="{{$language['LoginPassword']}}">
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="auth-remember-check">
-                                        <label class="form-check-label" for="auth-remember-check">{{$language['LoginRemember']}}</label>
+                                        <input type="checkbox" class="form-check-input" id="remember" name="remember">
+                                        <label class="form-check-label" for="remember">{{$language['LoginRemember']}}</label>
                                     </div>
 
                                     <div class="mt-3 text-end">

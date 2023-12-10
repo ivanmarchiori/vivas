@@ -12,9 +12,7 @@ class BlockController extends Controller
     public function index()
     {
        $canal = 'block';
-       if (session()->missing('lang')) {
-           session(['lang' => 'br']);
-       }
+       session(['lang' => auth()->user()->lang]);
        return view('block.block',['canal'=>$canal, 'lang'=>session('lang')]);
     }
 

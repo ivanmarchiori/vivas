@@ -50,7 +50,7 @@ include(resource_path("lang/{$lang}.php"));
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center text-muted p-4">
-                        <p class="text-white-50">© <script>document.write(new Date().getFullYear())</script> {{$language['NomeEmpresa'] }}. Desenvolvido para seu Projeto.</p>
+                        <p class="text-white-50">© <script>document.write(new Date().getFullYear())</script> {{$language['NomeEmpresa'] }}. {{$language['Slogan']}}</p>
                     </div>
                 </div>
             </div>

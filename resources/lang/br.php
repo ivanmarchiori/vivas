@@ -131,9 +131,15 @@ $language['new'] = "Novo";
 $language['YouareLoggedOut'] = "Desconectado com sucesso";
 $language['Thankyouforusing'] = "Obrigado por utilizar";
 $language['SignIn'] = "Iniciar Sessão";
+
 $language['404Title'] = "Desculpe, página não existe";
 $language['404Desc'] = "Clique no botão abaixo e volta para nossa página inicial";
 $language['404Button'] = "Volta para Página inicial";
+
+$language['419Title'] = "Desculpe, página não existe";
+$language['419Desc'] = "Clique no botão abaixo e volta para nossa página inicial";
+$language['419Button'] = "Volta para Página inicial";
+
 $language['500Title'] = "Desculpe, ocorreu um erro em sua página.";
 $language['500Desc'] = "Volte a página inicial e tente novamente";
 $language['500Button'] = "Volta para Página inicial";
@@ -147,7 +153,7 @@ $language['HomePage'] = "Seja Bem Vindo (a) ";
 
 $language['LoginWelcome'] = "Bem vindo de volta!";
 $language['LoginSignTitle'] = "Faça login para continuar";
-$language['LoginUser'] = "Nome de usuário";
+$language['EmailUser'] = "E-mail";
 $language['LoginForgot'] = "Esqueceu a senha?";
 $language['LoginPassword'] = "Senha";
 $language['LoginRemember'] = "Lembrar de mim";
@@ -155,6 +161,7 @@ $language['LoginLog'] = "Login";
 $language['LoginSign'] = "Entrar com";
 $language['LoginDont'] = "Não tem uma conta?";
 $language['LoginSignup'] = "Inscreva-se agora";
+$language['LoginEmailSenha']= "E-mail ou senha inválida";
 
 $language['RecoverResetPassword'] = "Redefinir senha";
 $language['RecoverReset'] = "Redefinir senha com e-VIVAS.";

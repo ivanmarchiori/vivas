@@ -1,5 +1,5 @@
 <?php
-include(resource_path("lang/{$lang}.php"));
+include(resource_path("lang/br.php"));
 ?>
 @extends('layouts.layout')
 @section('conteudo')
@@ -12,7 +12,7 @@ include(resource_path("lang/{$lang}.php"));
                 <div class="col-md-8 col-lg-6 col-xl-5">
 
                     <div class="text-center mb-4">
-                        <a href="index.php">
+                        <a href="/forgot-password">
                             <img src="/assets/images/logo-sm.svg" alt="" height="22"> <span class="logo-txt">{{$language['NomeEmpresa']}}</span>
                         </a>
                    </div>
@@ -27,11 +27,11 @@ include(resource_path("lang/{$lang}.php"));
                                 <div class="alert alert-success text-center small mb-4" role="alert">
                                     {{$language['RecoverEnterEmail']}}
                                 </div>
-                                <form action="/">
+                                <form action="/forgot-password" method="POST">
 
                                     <div class="mb-3">
                                         <label class="form-label" for="useremail">{{$language['RecoverEmail']}}</label>
-                                        <input type="email" class="form-control" id="useremail" placeholder="{{$language['RecoverEmail']}}">
+                                        <input type="email" class="form-control" id="email" required name="email" placeholder="{{$language['RecoverEmail']}}">
                                     </div>
 
                                     <div class="mt-3 text-end">

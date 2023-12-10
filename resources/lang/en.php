@@ -131,12 +131,19 @@ $language['new'] = "New";
 $language['YouareLoggedOut'] = "Successfully disconnected";
 $language['Thankyouforusing'] = "Thank you for using";
 $language['SignIn'] = "Start Session";
+
 $language['404Title'] = "Sorry, page does not exist";
 $language['404Desc'] = "Click the button below and go back to our home page";
 $language['404Button'] = "Return to Home page";
+
+$language['419Title'] = "Sorry, page does not exist";
+$language['419Desc'] = "Click the button below and go back to our home page";
+$language['419Button'] = "Return to Home page";
+
 $language['500Title'] = "Sorry, an error occurred on your page.";
 $language['500Desc'] = "Go back to the home page and try again";
 $language['500Button'] = "Back to Home";
+
 $language['BlockTitle'] = "Block Screen";
 $language['BlockDesc'] = "Use your password to return";
 $language['BlockUserName'] = "User Name";
@@ -148,7 +155,7 @@ $language['HomePage'] = "Welcome, ";
 
 $language['LoginWelcome'] = "Welcome back!";
 $language['LoginSignTitle'] = "Login to continue";
-$language['LoginUser'] = "Username";
+$language['EmailUser'] = "E-mail";
 $language['LoginForgot'] = "Forgot your password?";
 $language['LoginPassword'] = "Password";
 $language['LoginRemember'] = "Remember me";
@@ -156,6 +163,7 @@ $language['LoginLog'] = "Login";
 $language['LoginSign'] = "Login with";
 $language['LoginDont'] = "Don't have an account?";
 $language['LoginSignup'] = "Sign up now";
+$language['LoginEmailSenha'] = "Invalid email or password";
 
 
 $language['RecoverResetPassword'] = "ResetPassword";
@@ -181,5 +189,5 @@ $language['RegisterLogin'] = "Login";
 
 
 
-$language['Slogan'] = "Desenvolvido para seu Projeto.";
+$language['Slogan'] = "Developed for your Project.";
 ?>

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Auth;
+
 
 class LanguageController extends Controller
 {
@@ -11,6 +13,9 @@ class LanguageController extends Controller
      */
     public function index($lang)
     {
+        $user = Auth::user();
+        $user->lang = $lang;
+        $user->save();
 
         session(['lang' => $lang]);
 
