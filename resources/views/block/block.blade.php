@@ -27,18 +27,44 @@ include(resource_path("lang/{$lang}.php"));
                                     <img src="/assets/images/users/avatar-4.jpg" class="rounded-circle img-thumbnail avatar-lg" alt="thumbnail">
                                     <h5 class="font-size-15 mt-3">{{$language['BlockUserName']}}</h5>
                                 </div>
-                                <form action="index.php">
+                                @if ($mensagem = Session::get('erro'))
+                                @if($mensagem="EmailSenha")
+                                    <div class="alert alert-danger">{{$language['LoginEmailSenha'] }}</div>
+                                @endif
+                                @endif
 
+
+
+                                @if (session()->has('error'))
+                                <div class="alert alert-danger">{{$language['LoginEmailSenha']}}</div>
+                                @endif
+
+                                @if (session()->has('success'))
+                                <div class="alert alert-success">{{$language['RecoverSuccess']}}</div>
+                                @endif
+                                <form action="{{route('login.auth')}}" method="POST">
+                                    @csrf
+                                    <input type="text" hidden class="form-control" name="email" id="email" required value="{{auth()->user()->email}}">
                                     <div class="mb-3">
-                                        <label class="form-label" for="userpassword">{{$language['Senha']}}</label>
-                                        <input type="password" class="form-control" id="userpassword" placeholder="{{$language['Senha']}}">
+                                        <div class="float-end">
+                                            <a href="/login/recoverpw" class="text-muted">{{$language['LoginForgot']}}</a>
+                                        </div>
+                                        <label class="form-label" for="password">{{$language['LoginPassword']}}</label>
+                                        <input type="password" class="form-control" required name="password" id="password" placeholder="{{$language['LoginPassword']}}">
+                                    </div>
+
+                                    <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="remember" name="remember">
+                                        <label class="form-check-label" for="remember">{{$language['LoginRemember']}}</label>
                                     </div>
 
                                     <div class="mt-3 text-end">
                                         <button class="btn btn-primary w-sm waves-effect waves-light" type="submit">{{$language['Unlock'] }}</button>
                                     </div>
-
                                 </form>
+
+
+
                             </div>
 
                         </div>

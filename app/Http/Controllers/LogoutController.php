@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Cookie;
 
 class LogoutController extends Controller
 {
@@ -16,10 +17,15 @@ class LogoutController extends Controller
         $request->session()->invalidate();
         $request->session()->regenerateToken();
         $canal = 'logout';
-        if (session()->missing('lang')) {
-            session(['lang' => 'br']);
-        }
-        return view('logout.logout', ['canal' => $canal, 'lang'=>session('lang')]);
-    }
 
+        if (Cookie::has('lang')) {
+            $lang = Cookie::get('lang');
+        } else {
+            $lang = "br";
+            Cookie::queue('lang', $lang, 3);
+        }
+
+        session(['lang' => $lang]);
+        return view('logout.logout', ['canal' => $canal, 'lang' => session('lang')]);
+    }
 }

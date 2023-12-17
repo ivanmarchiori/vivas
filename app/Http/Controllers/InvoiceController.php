@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
 
 class InvoiceController extends Controller
 {
@@ -12,16 +13,27 @@ class InvoiceController extends Controller
     public function index()
     {
         $canal = 'invoiced';
-        session(['lang' => auth()->user()->lang]);
-        return view('invoice.invoice', ['canal' => $canal, 'lang'=>session('lang')]);
+        if (Cookie::has('lang')) {
+            $lang = Cookie::get('lang');
+        } else {
+            $lang = auth()->user()->lang;
+            Cookie::queue('lang', $lang, 3);
+        }
+
+        session(['lang' => $lang]);
+        return view('invoice.invoice', ['canal' => $canal, 'lang' => session('lang')]);
     }
     public function details($id)
     {
         $canal = 'invoice details';
-        if (session()->missing('lang')) {
-            session(['lang' => 'br']);
+        if (Cookie::has('lang')) {
+            $lang = Cookie::get('lang');
+        } else {
+            $lang = auth()->user()->lang;
+            Cookie::queue('lang', $lang, 3);
         }
-        return view('invoice.invoice-details', ['canal' => $canal,'id' => $id, 'lang'=>session('lang')]);
-    }
 
+        session(['lang' => $lang]);
+        return view('invoice.invoice-details', ['canal' => $canal, 'id' => $id, 'lang' => session('lang')]);
+    }
 }

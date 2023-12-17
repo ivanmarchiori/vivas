@@ -44,11 +44,20 @@ include(resource_path("lang/br.php"));
                                 <div class="alert alert-success text-center small mb-4" role="alert">
                                     {{$language['RecoverEnterEmail']}}
                                 </div>
-                                <form action="{{route('login.password.post')}}" method="POST">
+                                <form action="{{route('login.resetPassword.post')}}" method="POST">
                                     @csrf
+                                    <input type="text" name="token" id="token" value="{{$token}}" hidden>
                                     <div class="mb-3">
                                         <label class="form-label" for="useremail">{{$language['RecoverEmail']}}</label>
                                         <input type="email" class="form-control" id="email" required name="email" placeholder="{{$language['RecoverEmail']}}">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="password">{{$language['RecoverNewPassword']}}</label>
+                                        <input type="password" class="form-control" id="password" required name="password" placeholder="{{$language['RecoverNewPassword']}}">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label" for="password_confirmation">{{$language['RecoverConfirmPassword']}}</label>
+                                        <input type="password" class="form-control" id="password_confirmation" required name="password_confirmation" placeholder="{{$language['RecoverConfirmPassword']}}">
                                     </div>
 
                                     <div class="mt-3 text-end">

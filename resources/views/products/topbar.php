@@ -27,8 +27,8 @@
           </div>
         </div>
         <div class="dropdown d-inline-block language-switch">
-          <button type="button" class="btn header-item"
-                      data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="header-lang-img" src="/assets/images/flags/<?=$language['flag']?>.jpg" alt="<?=$language['HeaderLanguage']?>" height="16"> </button>
+          <button type="button" class="btn header-item2"
+                      data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="header-lang-img" src="/assets/images/flags/<?=auth()->user()->lang?>.jpg" alt="<?=$language['HeaderLanguage']?>" height="16"> </button>
           <div class="dropdown-menu dropdown-menu-end">
             <!-- item-->
             <a href="/lang/br" class="dropdown-item notify-item language" data-lang="br"> <img src="/assets/images/flags/br.jpg" alt="user-image" class="me-1" height="12"> <span class="align-middle">languês</span> </a>

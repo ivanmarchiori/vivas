@@ -161,10 +161,10 @@ $language['LoginForgot'] = "¿Olvidó su contraseña?";
 $language['LoginPassword'] = "Contraseña";
 $language['LoginRemember'] = "Recordarme";
 $language['LoginLog'] = "Iniciar sesión";
-$language['LoginSign'] = "Iniciar sesión con";
+$language['LoginSign'] = "Haga clic aquí";
 $language['LoginDont'] = "¿No tienes una cuenta?";
 $language['LoginSignup'] = "Regístrese ahora";
-$language['LoginEmailSenha']= "Correo electrónico o contraseña no válidos";
+$language['LoginEmailSenha'] = "Correo electrónico o contraseña no válidos";
 
 $language['RecoverResetPassword'] = "Restablecer contraseña";
 $language['RecoverReset'] = "Restablecer contraseña con e-VIVAS.";
@@ -173,20 +173,24 @@ $language['RecoverEmail'] = "Correo electrónico.";
 $language['RecoverReset'] = "Restablecer.";
 $language['RecoverRemember'] = "¿Recuerdas?";
 $language['RecoverSign'] = "Iniciar sesión.";
+$language['RecoverNewPassword'] = "Ingrese una nueva contraseña";
+$language['RecoverConfirmPassword'] = "Confirmar la nueva contraseña";
+$language['RecoverSuccess'] = "Los datos se cambiaron correctamente";
+
 
 $language['RegisterRegisterTitle'] = "Registrar cuenta";
 $language['RegisterGet'] = "Obtenga su cuenta e-VIVAS gratuita ahora.";
 $language['RegisterEmail'] = "Correo electrónico";
 $language['RegisterUsername'] = "Nombre de usuario";
 $language['RegisterPassword'] = "Contraseña";
+$language['RegisterPasswordConfirm'] = "Confirmar la contraseña";
 $language['RegisterI'] = "Acepto";
 $language['RegisterTerms'] = "Términos y condiciones";
 $language['RegisterRegister'] = "Registrarse";
 $language['RegisterSign'] = "Iniciar sesión con";
 $language['RegisterAlready'] = "¿Ya tienes una cuenta?";
 $language['RegisterLogin'] = "Iniciar sesión";
+$language['RegisterLanguage'] = "Idiomas";
+
 
 $language['Slogan'] = "Desarrollado para su Proyecto.";
-
-
-?>

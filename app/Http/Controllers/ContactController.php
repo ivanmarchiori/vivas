@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
 
 class ContactController extends Controller
 {
@@ -11,74 +12,54 @@ class ContactController extends Controller
      */
     public function index()
     {
-       $canal = 'contact';
-       session(['lang' => auth()->user()->lang]);
-       return view('contact.contact-list',['canal'=>$canal, 'lang'=>session('lang')]);
+        $canal = 'contact';
+        if (Cookie::has('lang')) {
+            $lang = Cookie::get('lang');
+        } else {
+            $lang = auth()->user()->lang;
+            Cookie::queue('lang', $lang, 3);
+        }
+
+        session(['lang' => $lang]);
+        return view('contact.contact-list', ['canal' => $canal, 'lang' => session('lang')]);
     }
     public function list()
     {
-       $canal = 'contact List';
-       session(['lang' => auth()->user()->lang]);
-       return view('contact.contact-list',['canal'=>$canal, 'lang'=>session('lang')]);
+        $canal = 'contact List';
+        if (Cookie::has('lang')) {
+            $lang = Cookie::get('lang');
+        } else {
+            $lang = auth()->user()->lang;
+            Cookie::queue('lang', $lang, 3);
+        }
+
+        session(['lang' => $lang]);
+        return view('contact.contact-list', ['canal' => $canal, 'lang' => session('lang')]);
     }
     public function grid()
     {
-       $canal = 'contact Grid';
-       session(['lang' => auth()->user()->lang]);
-       return view('contact.contact-grid',['canal'=>$canal, 'lang'=>session('lang')]);
+        $canal = 'contact Grid';
+        if (Cookie::has('lang')) {
+            $lang = Cookie::get('lang');
+        } else {
+            $lang = auth()->user()->lang;
+            Cookie::queue('lang', $lang, 3);
+        }
+
+        session(['lang' => $lang]);
+        return view('contact.contact-grid', ['canal' => $canal, 'lang' => session('lang')]);
     }
     public function profile()
     {
-       $canal = 'Profile';
-       session(['lang' => auth()->user()->lang]);
-       return view('contact.contact-profile',['canal'=>$canal, 'lang'=>session('lang')]);
-    }
+        $canal = 'Profile';
+        if (Cookie::has('lang')) {
+            $lang = Cookie::get('lang');
+        } else {
+            $lang = auth()->user()->lang;
+            Cookie::queue('lang', $lang, 3);
+        }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
-    {
-        //
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
+        session(['lang' => $lang]);
+        return view('contact.contact-profile', ['canal' => $canal, 'lang' => session('lang')]);
     }
 }

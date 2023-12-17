@@ -24,26 +24,62 @@ include(resource_path("lang/{$lang}.php"));
                                 <h5 class="text-primary"><?=$language['RegisterRegisterTitle']?></h5>
                                 <p class="text-muted"><?=$language['RegisterGet']?></p>
                             </div>
+
+                        @if ($errors->any())
+                            <div class="col-12">
+                                @foreach ($errors->all() as $error)
+                                    <div class="alert alert-danger">{{$error}}</div>
+                                @endforeach
+                            </div>
+                        @endif
+
+                        @if (session()->has('error'))
+                        <div class="alert alert-danger">{{session('error')}}</div>
+                        @endif
+
+                        @if (session()->has('success'))
+                        <div class="alert alert-success">{{session('success')}}</div>
+                        @endif
+
                             <div class="p-2 mt-4">
-                                <form action="/">
+                                <form action="{{route('login.register.post')}}" method="POST">
+
+                                    @csrf
 
                                     <div class="mb-3">
-                                        <label class="form-label" for="useremail"><?=$language['RegisterEmail']?></label>
-                                        <input type="email" class="form-control" id="useremail" placeholder="<?=$language['RegisterEmail']?>">
+                                        <label class="form-label" for="name"><?=$language['RegisterUsername']?></label>
+                                        <input type="text" class="form-control" id="name" name="name" placeholder="<?=$language['RegisterUsername']?>" value="{{ old('name') }}">
                                     </div>
 
                                     <div class="mb-3">
-                                        <label class="form-label" for="username"><?=$language['RegisterUsername']?></label>
-                                        <input type="text" class="form-control" id="username" placeholder="<?=$language['RegisterUsername']?>">
+                                        <label class="form-label" for="email"><?=$language['RegisterEmail']?></label>
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="<?=$language['RegisterEmail']?>" value="{{ old('email') }}">
                                     </div>
 
                                     <div class="mb-3">
-                                        <label class="form-label" for="userpassword"><?=$language['RegisterPassword']?></label>
-                                        <input type="password" class="form-control" id="userpassword" placeholder="<?=$language['RegisterPassword']?>">
+                                        <label class="form-label" for="password"><?=$language['RegisterPassword']?></label>
+                                        <input type="password" class="form-control" id="password" name="password" placeholder="<?=$language['RegisterPassword']?>">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label" for="password_confirmation"><?=$language['RegisterPasswordConfirm']?></label>
+                                        <input type="password" class="form-control" id="password_confirmation" name="password_confirmation" placeholder="<?=$language['RegisterPasswordConfirm']?>">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label" for="lang"><?=$language['RegisterLanguage']?></label>
+
+
+                                        <select name="lang" id="lang" class="form-control" required placeholder="<?=$language['RegisterLanguage']?>">
+                                            <option value="" @selected(old('lang') == "")></option>
+                                            <option value="br" @selected(old('lang') == "br")>Brasil</option>
+                                            <option value="en" @selected(old('lang') == "en")>English</option>
+                                            <option value="sp" @selected(old('lang') == "sp")>Spanish</option>
+                                        </select>
                                     </div>
 
                                     <div class="form-check">
-                                        <input type="checkbox" class="form-check-input" id="auth-terms-condition-check">
+                                        <input type="checkbox" class="form-check-input" id="auth-terms-condition-check" name="auth-terms-condition-check">
                                         <label class="form-check-label" for="auth-terms-condition-check"><?=$language['RegisterI']?>
                                             <a href="javascript: void(0);" class="text-dark"><?=$language['RegisterTerms']?></a></label>
                                     </div>
@@ -54,30 +90,13 @@ include(resource_path("lang/{$lang}.php"));
 
                                     <div class="mt-4 text-center">
                                         <div class="signin-other-title">
-                                            <h5 class="font-size-14 mb-3 title"><?=$language['RegisterSign']?></h5>
+                                            <h5 class="font-size-14 mb-3 title"><?=$language['RegisterAlready']?></h5>
                                         </div>
 
-                                        <ul class="list-inline">
-                                            <li class="list-inline-item">
-                                                <a href="javascript:void()" class="social-list-item bg-primary text-white border-primary">
-                                                    <i class="mdi mdi-facebook"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="javascript:void()" class="social-list-item bg-info text-white border-info">
-                                                    <i class="mdi mdi-twitter"></i>
-                                                </a>
-                                            </li>
-                                            <li class="list-inline-item">
-                                                <a href="javascript:void()" class="social-list-item bg-danger text-white border-danger">
-                                                    <i class="mdi mdi-google"></i>
-                                                </a>
-                                            </li>
-                                        </ul>
                                     </div>
 
                                     <div class="mt-4 text-center">
-                                        <p class="text-muted mb-0"><?=$language['RegisterAlready']?> <a href="/login" class="fw-medium text-primary"> <?=$language['RegisterLogin']?></a></p>
+                                        <p class="text-muted mb-0"><a href="/login" class="fw-medium text-primary btn btn-primary"> <?=$language['RegisterSign']?></a></p>
                                     </div>
                                 </form>
                             </div>

@@ -158,7 +158,7 @@ $language['LoginForgot'] = "Esqueceu a senha?";
 $language['LoginPassword'] = "Senha";
 $language['LoginRemember'] = "Lembrar de mim";
 $language['LoginLog'] = "Login";
-$language['LoginSign'] = "Entrar com";
+$language['LoginSign'] = "Cadastre-se";
 $language['LoginDont'] = "Não tem uma conta?";
 $language['LoginSignup'] = "Inscreva-se agora";
 $language['LoginEmailSenha']= "E-mail ou senha inválida";
@@ -170,18 +170,24 @@ $language['RecoverEmail'] = "E-mail.";
 $language['RecoverReset'] = "Redefinir.";
 $language['RecoverRemember'] = "Lembra-se disso? .";
 $language['RecoverSign'] = "Entrar.";
+$language['RecoverNewPassword'] = "Digite a nova senha";
+$language['RecoverConfirmPassword'] = "Confirme a nova senha";
+$language['RecoverSuccess'] = "Dados alterados com sucesso";
+
 
 $language['RegisterRegisterTitle'] = "Registrar conta";
 $language['RegisterGet'] = "Obtenha sua conta e-VIVAS gratuita agora.";
 $language['RegisterEmail'] = "E-mail";
 $language['RegisterUsername'] = "Nome de usuário";
 $language['RegisterPassword'] = "Senha";
+$language['RegisterPasswordConfirm'] = "Confirmar Senha";
 $language['RegisterI'] = "Aceito";
 $language['RegisterTerms'] = "Termos e Condições";
 $language['RegisterRegister'] = "Registrar";
-$language['RegisterSign'] = "Entrar com";
+$language['RegisterSign'] = "Clique aqui";
 $language['RegisterAlready'] = "Já tem uma conta? ";
 $language['RegisterLogin'] = "Login";
+$language['RegisterLanguage'] = "Idiomas";
 
 
 

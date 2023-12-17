@@ -1,5 +1,5 @@
 <?php
-$language['flag'] = "us";
+$language['flag'] = "en";
 $language['HeaderLanguage'] = "Language";
 $language['NomeEmpresa'] = "e-VIVAS";
 $language['Menu'] = "Menu";
@@ -160,7 +160,7 @@ $language['LoginForgot'] = "Forgot your password?";
 $language['LoginPassword'] = "Password";
 $language['LoginRemember'] = "Remember me";
 $language['LoginLog'] = "Login";
-$language['LoginSign'] = "Login with";
+$language['LoginSign'] = "Clique here";
 $language['LoginDont'] = "Don't have an account?";
 $language['LoginSignup'] = "Sign up now";
 $language['LoginEmailSenha'] = "Invalid email or password";
@@ -173,6 +173,9 @@ $language['RecoverEmail'] = "Email";
 $language['RecoverReset'] = "Reset.";
 $language['RecoverRemember'] = "Remember It ? .";
 $language['RecoverSign'] = "Sign in.";
+$language['RecoverNewPassword'] = "Enter new password";
+$language['RecoverConfirmPassword'] = "Confirm the new password";
+$language['RecoverSuccess'] = "Data changed successfully";
 
 
 $language['RegisterRegisterTitle'] = "Register Account";
@@ -180,12 +183,15 @@ $language['RegisterGet'] = "Get your free e-VIVAS account now.";
 $language['RegisterEmail'] = "Email";
 $language['RegisterUsername'] = "Username";
 $language['RegisterPassword'] = "Password";
+$language['RegisterPasswordConfirm'] = "Confirm Password";
 $language['RegisterI'] = "I accept";
 $language['RegisterTerms'] = "Terms and Conditions";
 $language['RegisterRegister'] = "Register";
 $language['RegisterSign'] = "Sign in with";
 $language['RegisterAlready'] = "Already have an account ? ";
 $language['RegisterLogin'] = "Login";
+$language['RegisterLanguage'] = "Language";
+
 
 
 

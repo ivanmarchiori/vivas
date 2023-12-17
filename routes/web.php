@@ -41,41 +41,6 @@ Route::group([
     Route::get('/details/{id}', [InvoiceController::class, 'details'])->name('details')->middleware('auth');
 });
 
-/*
-Route::get('/forgot-password', function () {
-    return view('login.recoverpw');
-})->middleware('guest')->name('password.request');
-
-Route::post('/forgot-password', function (Request $request) {
-    $request->validate(['email' => 'required|email']);
-
-    $status = Password::sendResetLink(
-        $request->only('email')
-    );
-dd();
-    return $status === Password::RESET_LINK_SENT
-        ? back()->with(['status' => __($status)])
-        : back()->withErrors(['email' => __($status)]);
-})->name('password.email');
-*/
-
-Route::get('/forgot-password', function () {
-    return view('login.recoverpw');
-})->middleware('guest')->name('password.request');
-
-Route::post('/forgot-password', function (Request $request) {
-    $request->validate(['email' => 'required|email']);
-
-    $status = Password::sendResetLink(
-        $request->only('email')
-    );
-
-    return $status === Password::RESET_LINK_SENT
-                ? back()->with(['status' => __($status)])
-                : back()->withErrors(['email' => __($status)]);
-})->middleware('guest')->name('password.email');
-
-
 
 Route::group([
     'prefix' => 'login',
@@ -83,8 +48,12 @@ Route::group([
 ], function () {
     Route::get('/', [LoginController::class, 'index'])->name('login');
     Route::post('/auth', [LoginController::class, 'auth'])->name('auth');
-    Route::get('/recoverpw', [LoginController::class, 'recoverpw'])->name('recoverpw');
+    Route::get('/recoverpw', [ForgotPasswordController::class,'forgotPassword'])->name('password');
+    Route::post('/recoverpw', [ForgotPasswordController::class,'forgotPasswordPost'])->name('password.post');
+    Route::post('/reset-password', [ForgotPasswordController::class,'resetPasswordPost'])->name('resetPassword.post');
+    Route::get('/reset/{token}', [ForgotPasswordController::class,'resetPassword'])->name('reset');
     Route::get('/register', [LoginController::class, 'register'])->name('register');
+    Route::post('/register', [LoginController::class, 'registerPost'])->name('register.post');
 });
 
 Route::group([
@@ -104,3 +73,4 @@ Route::group([
     Route::get('/list', [ProductsController::class, 'index'])->name('list')->middleware('auth');
     Route::get('/details/{id}', [ProductsController::class, 'details'])->name('details')->middleware('auth');
 });
+
