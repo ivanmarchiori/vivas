@@ -76,7 +76,7 @@
   --bs-body-line-height: 1.6;
   --bs-body-color: #082a3e;
   --bs-body-color-rgb: 8, 42, 62;
-  --bs-body-bg: #FFF8E4;
+  --bs-body-bg: #EEEEEE;
   --bs-body-bg-rgb: 244, 245, 246;
   --bs-emphasis-color: #000;
   --bs-emphasis-color-rgb: 0, 0, 0;
@@ -2803,11 +2803,11 @@ textarea.form-control-lg {
   outline: 0;
 }
 .form-range:focus::-webkit-slider-thumb {
-  -webkit-box-shadow: 0 0 0 1px #FFF8E4, 0 0 0 0.25rem rgba(57, 128, 192, 0.25);
-          box-shadow: 0 0 0 1px #FFF8E4, 0 0 0 0.25rem rgba(57, 128, 192, 0.25);
+  -webkit-box-shadow: 0 0 0 1px #EEEEEE, 0 0 0 0.25rem rgba(57, 128, 192, 0.25);
+          box-shadow: 0 0 0 1px #EEEEEE, 0 0 0 0.25rem rgba(57, 128, 192, 0.25);
 }
 .form-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px #FFF8E4, 0 0 0 0.25rem rgba(57, 128, 192, 0.25);
+  box-shadow: 0 0 0 1px #EEEEEE, 0 0 0 0.25rem rgba(57, 128, 192, 0.25);
 }
 .form-range::-moz-focus-outer {
   border: 0;
@@ -13330,7 +13330,7 @@ textarea.form-control-lg {
 }
 :root [data-topbar=dark],
 [data-bs-theme=light] [data-topbar=dark] {
-  --bs-header-dark-bg: #604312;
+  --bs-header-dark-bg: #006699;
   --bs-header-dark-item-color: #e9ecef;
   --bs-header-item-sub-color: #8795ab;
 }
