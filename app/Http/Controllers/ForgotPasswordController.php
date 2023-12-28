@@ -18,9 +18,16 @@ class ForgotPasswordController extends Controller
     }
     function forgotPasswordPost(Request $request)
     {
+        $mensagens = [
+            'email.required' => 'O campo de e-mail é obrigatório.',
+            'email.email' => 'Por favor, forneça um endereço de e-mail válido.',
+            'email.exists' => 'O endereço de e-mail não está registrado em nosso sistema.',
+        ];
+
         $request->validate([
             'email' => 'required|email|exists:users',
-        ]);
+        ],
+        $mensagens);
 
         $token = Str::random(64);
 
@@ -50,6 +57,14 @@ class ForgotPasswordController extends Controller
             "email" => "required|email|exists:users",
             "password" => "required|string|min:6|confirmed",
             "password_confirmation" => "required"
+        ], [
+            "email.required" => "E-mail é Obrigatório",
+            "email.email" => "E-mail precisa ser válido",
+            "password.required" => "Senha Obrigatória",
+            "password.confirmed" => "Senha não confere",
+            "password.min" => "Senha deve ter mínimo de 6 caracteres",
+            "password_confirmation.required" => "Senha Obrigatória",
+            "password_confirmation.min" => "Senha deve ter mínimo de 6 caracteres"
         ]);
 
         $updatePassword = DB::table('password_reset_tokens')->where([
