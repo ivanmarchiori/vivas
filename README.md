@@ -43,10 +43,8 @@ Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as vers�
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
-
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
+* **Ivan Marchiori** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/ivanmarchiori)
+* **Vinicius Rezende** - *Inpiração e consultoria* - [fulanodetal](https://github.com/)
 
 ## 📄 Licença
 
@@ -54,10 +52,7 @@ Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](h
 
 ## 🎁 Expressões de gratidão
 
-* Conte a outras pessoas sobre este projeto 📢;
-* Convide alguém da equipe para uma cerveja 🍺;
-* Um agradecimento publicamente 🫂;
-* etc.
+* Conte a outras pessoas sobre este projeto 📢; 
 
 
 ---
