@@ -1,4 +1,4 @@
-# Projeto Vivas
+# Projeto Viva's
 
 Projeto para desenvolvimento de plataformas utilizando Laravel
 
@@ -43,8 +43,8 @@ Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as vers�
 
 Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
 
-* **Ivan Marchiori** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/ivanmarchiori)
-* **Vinicius Rezende** - *Inpiração e consultoria* - [fulanodetal](https://github.com/)
+* **Ivan Marchiori** - *Trabalho Inicial* - [Ivan Marchiori](https://github.com/ivanmarchiori)
+* **Vinicius Rezende** - *Inpiração e consultoria* - [Vinicius Rezende](https://github.com/)
 
 ## 📄 Licença
 
