@@ -1,7 +1,7 @@
 <?php
 $language['flag'] = "br";
 $language['HeaderLanguage'] = "Idiomas";
-$language['NomeEmpresa'] = "e-VIVAS";
+$language['NomeEmpresa'] = "Gest";
 $language['Menu'] = "Menu";
 $language['Dashboard'] = "Dashboard";
 $language['Applications'] = "Aplicações";
@@ -164,7 +164,7 @@ $language['LoginSignup'] = "Inscreva-se agora";
 $language['LoginEmailSenha']= "E-mail ou senha inválida";
 
 $language['RecoverResetPassword'] = "Redefinir senha";
-$language['RecoverReset'] = "Redefinir senha com e-VIVAS.";
+$language['RecoverReset'] = "Redefinir senha com ".$language['NomeEmpresa'] ;
 $language['RecoverEnterEmail'] = "Digite seu e-mail e as instruções serão enviadas para você!";
 $language['RecoverEmail'] = "E-mail.";
 $language['RecoverReset'] = "Redefinir.";
@@ -176,7 +176,7 @@ $language['RecoverSuccess'] = "Dados alterados com sucesso";
 
 
 $language['RegisterRegisterTitle'] = "Registrar conta";
-$language['RegisterGet'] = "Obtenha sua conta e-VIVAS gratuita agora.";
+$language['RegisterGet'] = "Obtenha sua conta ".$language['NomeEmpresa'] ." gratuita agora.";
 $language['RegisterEmail'] = "E-mail";
 $language['RegisterUsername'] = "Nome de usuário";
 $language['RegisterPassword'] = "Senha";
