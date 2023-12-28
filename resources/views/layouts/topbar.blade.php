@@ -62,7 +62,7 @@
               </h6>
               <a href="" class="text-reset notification-item">
               <div class="d-flex border-bottom align-items-start">
-                <div class="flex-shrink-0"> <img src="/assets/images/users/avatar-3.jpg"
+                <div class="flex-shrink-0"> <img src="/assets/images/users/<?=auth()->user()->photo?>"
                                       class="me-3 rounded-circle avatar-sm" alt="user-pic"> </div>
                 <div class="flex-grow-1">
                   <h6 class="mb-1">Nome Completo</h6>
@@ -110,7 +110,7 @@
               </div>
               </a> <a href="" class="text-reset notification-item">
               <div class="d-flex border-bottom align-items-start">
-                <div class="flex-shrink-0"> <img src="/assets/images/users/avatar-4.jpg"
+                <div class="flex-shrink-0"> <img src="/assets/images/users/<?=auth()->user()->photo?>"
                                           class="me-3 rounded-circle avatar-sm" alt="user-pic"> </div>
                 <div class="flex-grow-1">
                   <h6 class="mb-1">Nome Completo</h6>
@@ -130,7 +130,7 @@
         </div>
         <div class="dropdown d-inline-block">
           <button type="button" class="btn header-item user text-start d-flex align-items-center" id="page-header-user-dropdown"
-                      data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="rounded-circle header-profile-user" src="/assets/images/users/avatar-1.jpg" alt="Header Avatar"> </button>
+                      data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="rounded-circle header-profile-user" src="/assets/images/users/<?=auth()->user()->photo?>" alt="Header Avatar"> </button>
           <div class="dropdown-menu dropdown-menu-end pt-0"> <a class="dropdown-item" href="/myaccount"><i class='bx bx-user-circle text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
             <?=$language['My_Account']?>
             </span></a> <a class="dropdown-item" href="/chat"><i class='bx bx-chat text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">

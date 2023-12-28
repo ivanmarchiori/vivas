@@ -191,6 +191,7 @@ $language['RegisterSign'] = "Iniciar sesión con";
 $language['RegisterAlready'] = "¿Ya tienes una cuenta?";
 $language['RegisterLogin'] = "Iniciar sesión";
 $language['RegisterLanguage'] = "Idiomas";
+$language['RegisterPhoto'] = "Imagen del perfil";
 
 
 $language['Slogan'] = "Desarrollado para su Proyecto.";

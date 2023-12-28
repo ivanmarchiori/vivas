@@ -42,7 +42,7 @@ include(resource_path("lang/{$lang}.php"));
                         @endif
 
                             <div class="p-2 mt-4">
-                                <form action="{{route('login.register.post')}}" method="POST">
+                                <form action="{{route('login.register.post')}}" method="POST" enctype="multipart/form-data">
 
                                     @csrf
 

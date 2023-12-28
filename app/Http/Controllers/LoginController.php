@@ -90,11 +90,11 @@ class LoginController extends Controller
         session(['lang' => $lang]);
 
         $request->validate([
-            "name" => "required|string",
-            "email" => "required|email",
-            "email" => "unique:users,email",
-            "password" => "required|string|min:6|confirmed",
-            "password_confirmation" => "required"
+            'name' => 'required|string',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|min:6|confirmed',
+            'lang' => 'required|in:br,en,sp',
+            'auth-terms-condition-check' => 'required|accepted'
         ], [
             "name.required" => "Nome é Obrigatório",
             "email.required" => "E-mail é Obrigatório",
@@ -104,16 +104,21 @@ class LoginController extends Controller
             "password.confirmed" => "Senha não confere",
             "password.min" => "Senha deve ter mínimo de 6 caracteres",
             "password_confirmation.required" => "Senha Obrigatória",
-            "password_confirmation.confirmed" => "Senha não confere",
-            "password_confirmation.min" => "Senha deve ter mínimo de 6 caracteres"
+            "password_confirmation.min" => "Senha deve ter mínimo de 6 caracteres",
+            "lang.required" => "Selecione o idioma",
+            "auth-terms-condition-check.required" => "É preciso aceitar os termos para prosseguir"
         ]);
 
         $user = $request->all();
         $user['password'] = bcrypt($request->password);
+        $user['password_confirmation'] = bcrypt($request->password);
 
+        Cookie::queue('lang', $request->lang, 3);
+        session(['lang' => $request->lang]);
         $user = User::create($user);
         Auth::login($user);
 
-        return view('home.home', ['canal' => $canal, 'lang' => session('lang')]);
+
+        return view('home.home', ['canal' => $canal, 'lang' => $request->lang]);
     }
 }

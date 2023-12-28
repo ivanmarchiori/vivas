@@ -46,7 +46,7 @@ include(resource_path("lang/{$lang}.php"));
                                     <div class="main-wid position-relative">
                                         <h3 class="text-white">{{$language['NomeEmpresa'] }} - Dashboard</h3>
 
-                                        <h3 class="text-white mb-0"> Seja bem vindo, {{auth()->user()->name}}</h3>
+                                        <h3 class="text-white mb-0"> {{$language['HomePage'] }}, {{auth()->user()->name}}</h3>
 
                                         <p class="text-white-50 px-4 mt-4">Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien libero tincidunt.</p>
 
@@ -610,7 +610,7 @@ include(resource_path("lang/{$lang}.php"));
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td><img src="/assets/images/users/avatar-1.jpg" class="avatar-sm rounded-circle " alt="..."></td>
+                                                        <td><img src="/assets/images/users/<?=auth()->user()->photo?>" class="avatar-sm rounded-circle " alt="..."></td>
                                                         <td>
                                                             <h6 class="font-size-15 mb-1">Sonya Henshaw</h6>
                                                             <p class="text-muted font-size-13 mb-0"><i class="mdi mdi-map-marker"></i> India</p>

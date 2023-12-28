@@ -191,6 +191,7 @@ $language['RegisterSign'] = "Sign in with";
 $language['RegisterAlready'] = "Already have an account ? ";
 $language['RegisterLogin'] = "Login";
 $language['RegisterLanguage'] = "Language";
+$language['RegisterPhoto'] = "Profile image";
 
 
 

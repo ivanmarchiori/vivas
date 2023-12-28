@@ -30,7 +30,7 @@ include(resource_path("lang/{$lang}.php"));
                         <div class="p-3 px-4">
                             <div class="d-flex align-items-start">
                                 <div class="flex-shrink-0 me-3 align-self-center">
-                                    <img src="/assets/images/users/avatar-4.jpg" class="avatar-sm rounded-circle" alt="">
+                                    <img src="/assets/images/users/{{auth()->user()->photo}}" class="avatar-sm rounded-circle" alt="">
                                 </div>
 
                                 <div class="flex-grow-1">
@@ -141,7 +141,7 @@ include(resource_path("lang/{$lang}.php"));
                                                     <div class="d-flex align-items-start">
                                                         <div class="flex-shrink-0 me-3 align-self-center">
                                                             <div class="user-img online">
-                                                                <img src="/assets/images/users/avatar-2.jpg" class="rounded-circle avatar-sm" alt="">
+                                                                <img src="/assets/images/users/{{auth()->user()->photo}}" class="rounded-circle avatar-sm" alt="">
                                                                 <span class="user-status"></span>
                                                             </div>
                                                         </div>
@@ -190,7 +190,7 @@ include(resource_path("lang/{$lang}.php"));
                                                     <div class="d-flex align-items-start">
                                                         <div class="flex-shrink-0 align-self-center me-3">
                                                             <div class="user-img away">
-                                                                <img src="/assets/images/users/avatar-3.jpg" class="rounded-circle avatar-sm" alt="">
+                                                                <img src="/assets/images/users/{{auth()->user()->photo}}" class="rounded-circle avatar-sm" alt="">
                                                                 <span class="user-status"></span>
                                                             </div>
                                                         </div>
@@ -211,7 +211,7 @@ include(resource_path("lang/{$lang}.php"));
                                                     <div class="d-flex align-items-start">
                                                         <div class="flex-shrink-0 align-self-center me-3">
                                                             <div class="user-img">
-                                                                <img src="/assets/images/users/avatar-4.jpg" class="rounded-circle avatar-sm" alt="">
+                                                                <img src="/assets/images/users/{{auth()->user()->photo}}" class="rounded-circle avatar-sm" alt="">
                                                                 <span class="user-status"></span>
                                                             </div>
                                                         </div>

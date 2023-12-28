@@ -24,7 +24,7 @@ include(resource_path("lang/{$lang}.php"));
                             </div>
                             <div class="p-2 mt-4">
                                 <div class="user-thumb text-center mb-4">
-                                    <img src="/assets/images/users/avatar-4.jpg" class="rounded-circle img-thumbnail avatar-lg" alt="thumbnail">
+                                    <img src="/assets/images/users/{{auth()->user()->photo}}" class="rounded-circle img-thumbnail avatar-lg" alt="thumbnail">
                                     <h5 class="font-size-15 mt-3">{{$language['BlockUserName']}}</h5>
                                 </div>
                                 @if ($mensagem = Session::get('erro'))

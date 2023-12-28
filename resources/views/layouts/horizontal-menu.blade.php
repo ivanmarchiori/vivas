@@ -359,7 +359,7 @@
                         <a href="" class="text-reset notification-item">
                             <div class="d-flex border-bottom align-items-start bg-light">
                                 <div class="flex-shrink-0">
-                                    <img src="/assets/images/users/avatar-3.jpg"
+                                    <img src="/assets/images/users/<?=auth()->user()->photo?>"
                                     class="me-3 rounded-circle avatar-sm" alt="user-pic">
                                 </div>
                                 <div class="flex-grow-1">
@@ -411,7 +411,7 @@
                         <a href="" class="text-reset notification-item">
                             <div class="d-flex border-bottom align-items-start">
                                 <div class="flex-shrink-0">
-                                    <img src="/assets/images/users/avatar-4.jpg"
+                                    <img src="/assets/images/users/<?=auth()->user()->photo?>"
                                         class="me-3 rounded-circle avatar-sm" alt="user-pic">
                                 </div>
                                 <div class="flex-grow-1">

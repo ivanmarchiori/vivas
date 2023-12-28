@@ -439,7 +439,7 @@ include(resource_path("lang/{$lang}.php"));
                                         <div data-simplebar style="max-height: 430px;">
                                             <div class="d-flex align-items-start border-bottom py-4">
                                                 <div class="flex-shrink-0 me-2">
-                                                    <img class="rounded-circle avatar-sm" src="/assets/images/users/avatar-3.jpg" alt="avatar-3 images">
+                                                    <img class="rounded-circle avatar-sm" src="/assets/images/users/{{auth()->user()->photo}}" alt="avatar-3 images">
                                                 </div>
 
                                                 <div class="flex-grow-1">
@@ -450,7 +450,7 @@ include(resource_path("lang/{$lang}.php"));
 
                                                     <div class="d-flex align-items-start mt-4">
                                                         <div class="flex-shrink-0 me-2">
-                                                            <img class="rounded-circle avatar-sm" src="/assets/images/users/avatar-4.jpg" alt="avatar-4 images">
+                                                            <img class="rounded-circle avatar-sm" src="/assets/images/users/{{auth()->user()->photo}}" alt="avatar-4 images">
                                                         </div>
 
                                                         <div class="flex-grow-1">
