@@ -131,7 +131,7 @@
         <div class="dropdown d-inline-block">
           <button type="button" class="btn header-item user text-start d-flex align-items-center" id="page-header-user-dropdown"
                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="rounded-circle header-profile-user" src="/assets/images/users/<?=auth()->user()->photo?>" alt="Header Avatar"> </button>
-          <div class="dropdown-menu dropdown-menu-end pt-0"> <a class="dropdown-item" href="/myaccount"><i class='bx bx-user-circle text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
+            <div class="dropdown-menu dropdown-menu-end pt-0"> <a class="dropdown-item" href="/myaccount"><i class='bx bx-user-circle text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
             <?=$language['My_Account']?>
             </span></a> <a class="dropdown-item" href="/chat"><i class='bx bx-chat text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
             <?=$language['Chat']?>

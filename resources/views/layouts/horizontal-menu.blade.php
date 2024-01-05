@@ -83,12 +83,14 @@
                                     <div class="dropdown">
                                         <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-contact"
                                             role="button">
-                                           <span data-key="t-contacts"><?php echo $language["Contacts"]; ?></span> <div class="arrow-down"></div>
+                                           <span data-key="t-contacts"><?php echo $language["Oportunidades"]; ?></span> <div class="arrow-down"></div>
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="topnav-contact">
-                                            <a href="/contact/grid" class="dropdown-item" data-key="t-user-grid"><?php echo $language["User_Grid"]; ?></a>
-                                            <a href="/contact/list" class="dropdown-item" data-key="t-user-list"><?php echo $language["User_List"]; ?></a>
+                                            <a href="/contact/grid" class="dropdown-item" data-key="t-user-grid"><?php echo $language["Kanban"]; ?></a>
+                                            <a href="/notes" class="dropdown-item" data-key="t-user-list"><?php echo $language["KanbanList"]; ?></a>
+                                            <!--
                                             <a href="/myaccount" class="dropdown-item" data-key="t-user-settings"><?php echo $language["Profile"]; ?></a>
+                                            -->
                                         </div>
                                     </div>
                                 </div>

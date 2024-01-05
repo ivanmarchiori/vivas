@@ -41,18 +41,60 @@
                     </a>
                 </li>
 
-                <li class="menu-title" data-key="t-applications"><?php echo $language["Applications"]; ?></li>
+                <li class="menu-title" data-key="t-applications"><?php echo $language["Recursos"]; ?></li>
                 <li>
                     <a href="javascript: void(0);" class="has-arrow">
                         <i class="bx bxs-user-detail icon nav-icon"></i>
-                        <span class="menu-item" data-key="t-contacts"><?php echo $language["Contacts"]; ?></span>
+                        <span class="menu-item" data-key="t-contacts"><?php echo $language["Oportunidades"]; ?></span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="/contact/grid" data-key="t-user-grid"><?php echo $language["User_Grid"]; ?></a></li>
-                        <li><a href="/contact/list" data-key="t-user-list"><?php echo $language["User_List"]; ?></a></li>
+                        <li><a href="/contact/grid" data-key="t-user-grid"><?php echo $language["Kanban"]; ?></a></li>
+                        <li><a href="/notes" data-key="t-user-list"><?php echo $language["KanbanList"]; ?></a></li>
+                        <!--
                         <li><a href="/myaccount" data-key="t-user-settings"><?php echo $language["Profile"]; ?></a></li>
+                        -->
                     </ul>
                 </li>
+                <li>
+                    <a href="/chat">
+                        <i class="bx bx-chat icon nav-icon"></i>
+                        <span class="menu-item" data-key="t-chat"><?php echo $language["Chat"]; ?></span>
+                        <span class="badge rounded-pill bg-danger" data-key="t-hot"><?php echo $language["Hot"]; ?></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/calendar">
+                        <i class="bx bx-calendar icon nav-icon"></i>
+                        <span class="menu-item" data-key="t-calendar"><?php echo $language["Calendar"]; ?></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="/partners">
+                        <i class="bx bx-calendar icon nav-icon"></i>
+                        <span class="menu-item" data-key="t-calendar"><?php echo $language["Partners"]; ?></span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="javascript: void(0);" class="has-arrow">
+                        <i class="bx bx-store icon nav-icon"></i>
+                        <span class="menu-item" data-key="t-ecommerce"><?php echo $language["Setup"]; ?></span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="/setup/tags" data-key="t-product-detail"><?php echo $language["SetupTags"]; ?></a></li>
+                        <li><a href="/setup/parameters" data-key="t-product-detail"><?php echo $language["SetupParam"]; ?></a></li>
+                        <li><a href="/setup/products" data-key="t-product-detail"><?php echo $language["SetupProducts"]; ?></a></li>
+                        <li><a href="/setup/reasons" data-key="t-product-detail"><?php echo $language["SetupReasons"]; ?></a></li>
+                        <li><a href="/setup/emails" data-key="t-product-detail"><?php echo $language["SetupEmails"]; ?></a></li>
+                        <li><a href="/setup/goals" data-key="t-product-detail"><?php echo $language["SetupGoals"]; ?></a></li>
+                        <li><a href="/setup/users" data-key="t-product-detail"><?php echo $language["SetupUsers"]; ?></a></li>
+                    </ul>
+                </li>
+
+
+<!--
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow">
@@ -65,20 +107,9 @@
                     </ul>
                 </li>
 
-                <li>
-                    <a href="/calendar">
-                        <i class="bx bx-calendar icon nav-icon"></i>
-                        <span class="menu-item" data-key="t-calendar"><?php echo $language["Calendar"]; ?></span>
-                    </a>
-                </li>
 
-                <li>
-                    <a href="/chat">
-                        <i class="bx bx-chat icon nav-icon"></i>
-                        <span class="menu-item" data-key="t-chat"><?php echo $language["Chat"]; ?></span>
-                        <span class="badge rounded-pill bg-danger" data-key="t-hot"><?php echo $language["Hot"]; ?></span>
-                    </a>
-                </li>
+
+
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow">
@@ -90,7 +121,7 @@
                         <li><a href="/notes-read" data-key="t-read-email"><?php echo $language["Read_Email"]; ?></a></li>
                     </ul>
                 </li>
-
+            -->
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow">

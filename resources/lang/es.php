@@ -4,8 +4,9 @@ $language['HeaderLanguage'] = "Idioma";
 $language['NomeEmpresa'] = "Gest";
 $language['Menu'] = "Menú";
 $language['Dashboard'] = "Tablero";
-$language['Applications'] = "Aplicaciones";
-$language['Calendar'] = "Calendario";
+$language['Recursos'] = "Recursos";
+$language['Calendar'] = "Cronograma";
+$language['Partners'] = "Socios";
 $language['Chat'] = "Chat";
 $language['Hot'] = "Caliente";
 $language['Email'] = "Correo electrónico";
@@ -23,9 +24,9 @@ $language['Add_Product'] = "Agregar producto";
 $language['Invoices'] = "Facturas";
 $language['Invoices_List'] = "Lista de facturas";
 $language['Invoice_Detail'] = "Detalle de la factura";
-$language['Contacts'] = "Contactos";
-$language['User_Grid'] = "Cuadrícula de usuario";
-$language['User_List'] = "Lista de usuarios";
+$language['Oportunidades'] = "Oportunidades";
+$language['Kanban'] = "Painel";
+$language['KanbanList'] = "Lista";
 $language['Profile'] = "Perfil";
 $language['Pages'] = "Paginas";
 $language['Authentication'] = "Autenticación";
@@ -195,3 +196,14 @@ $language['RegisterPhoto'] = "Imagen del perfil";
 
 
 $language['Slogan'] = "Desarrollado para su Proyecto.";
+
+
+$language['Setup'] = "Configuración";
+$language['SetupTags'] = "Etiquetas";
+$language['SetupParam'] = "Parámetro";
+$language['SetupProducts'] = "Productos";
+$language['SetupReasons'] = "Razones";
+$language['SetupEmails'] = "Correos electrónicos";
+$language['SetupGoals'] = "Metas";
+$language['SetupUsers'] = "Usuarios";
+
