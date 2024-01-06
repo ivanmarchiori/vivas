@@ -7,7 +7,6 @@ $language['Dashboard'] = "Tablero";
 $language['Recursos'] = "Recursos";
 $language['Calendar'] = "Cronograma";
 $language['Partners'] = "Socios";
-$language['Chat'] = "Chat";
 $language['Hot'] = "Caliente";
 $language['Email'] = "Correo electrónico";
 $language['Inbox'] = "Bandeja de entrada";
@@ -42,7 +41,6 @@ $language['Utility'] = "Utilidad";
 $language['Starter_Page'] = "Página de inicio";
 $language['Maintenance'] = "Mantenimiento";
 $language['Coming_Soon'] = "Próximamente, en breve, pronto";
-$language['Timeline'] = "Cronología";
 $language['FAQs'] = "Preguntas frecuentes";
 $language['Pricing'] = "Precios";
 $language['Error_404'] = "error 404";
@@ -119,7 +117,6 @@ $language['Yay_Everything_worked'] = "Yay todo funcionó";
 $language['3_days_ago'] = "Hace 3 días";
 $language['View_All'] = "Ver todo";
 $language['My_Account'] = "Mi cuenta";
-$language['Chat'] = "Chat";
 $language['Support'] = "Apoyo";
 $language['Settings_'] = "Ajustes";
 $language['Lock_screen'] = "Bloquear pantalla";
@@ -199,6 +196,7 @@ $language['Slogan'] = "Desarrollado para su Proyecto.";
 
 
 $language['Setup'] = "Configuración";
+$language['SetupCompany'] = "Datos de registro";
 $language['SetupTags'] = "Etiquetas";
 $language['SetupParam'] = "Parámetro";
 $language['SetupProducts'] = "Productos";
@@ -207,3 +205,9 @@ $language['SetupEmails'] = "Correos electrónicos";
 $language['SetupGoals'] = "Metas";
 $language['SetupUsers'] = "Usuarios";
 
+
+
+$language['partners'] = "Socios";
+$language['Search'] = "Busca";
+
+?>

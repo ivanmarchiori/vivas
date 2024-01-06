@@ -5,14 +5,14 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Http\Request;
 
-class ChatController extends Controller
+class TimelineController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $canal = 'chat';
+        $canal = 'timeline';
 
         if (Cookie::has('lang')) {
             $lang = Cookie::get('lang');
@@ -22,6 +22,6 @@ class ChatController extends Controller
         }
 
         session(['lang' => $lang]);
-        return view('chat.chat', ['canal' => $canal, 'lang' => session('lang')]);
+        return view('timeline.timeline', ['canal' => $canal, 'lang' => session('lang')]);
     }
 }

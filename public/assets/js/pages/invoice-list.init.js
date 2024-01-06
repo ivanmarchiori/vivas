@@ -18,7 +18,7 @@ new gridjs.Grid({
         {
           name: 'Order ID',
           formatter: (function (cell) {
-            return gridjs.html('<span class="fw-semibold">' + cell + '</span>');
+            return gridjs.html('<a href="/invoice/details/1" class="text-body"><span class="fw-semibold">' + cell + '</span></a>');
           })
         },
          "Date", "Billing Name", "Amount",
@@ -43,7 +43,7 @@ new gridjs.Grid({
             enabled: false
         },
           formatter: (function (cell) {
-            return gridjs.html('<div class="dropdown"><button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bx bx-dots-horizontal-rounded"></i></button><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="#">Edit</a></li><li><a class="dropdown-item" href="#">Print</a></li><li><a class="dropdown-item" href="#">Delete</a></li></ul></div>');
+            return gridjs.html('<div class="dropdown"><button class="btn btn-light btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bx bx-dots-horizontal-rounded"></i></button><ul class="dropdown-menu dropdown-menu-end"><li><a class="dropdown-item" href="/invoice/details/1">Open</a></li><li><a class="dropdown-item" href="#">Edit</a></li><li><a class="dropdown-item" href="#">Print</a></li><li><a class="dropdown-item" href="#">Delete</a></li></ul></div>');
           })
         }
       ],

@@ -6,9 +6,9 @@
         <button type="button" class="btn btn-sm px-3 font-size-16 header-item vertical-menu-btn"> <i class="fa fa-fw fa-bars"></i> </button>
 
         <!-- Search -->
-        <form class="app-search d-none d-lg-block">
+        <form class="app-search d-none d-lg-block" method="GET" action="/search">
           <div class="position-relative">
-            <input type="text" class="form-control" placeholder="<?=$language['Search']?>">
+            <input type="text" class="form-control" placeholder="<?=$language['Search']?>" name="q" id="q" required value="<?php echo (isset($_GET["q"])?$_GET["q"]:'') ?>" >
             <span class="bx bx-search"></span> </div>
         </form>
       </div>
@@ -17,10 +17,10 @@
           <button type="button" class="btn header-item"
                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="icon-sm" data-feather="search"></i> </button>
           <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0">
-            <form class="p-2">
+            <form class="p-2" method="GET" action="/search">
               <div class="search-box">
                 <div class="position-relative">
-                  <input type="text" class="form-control rounded bg-light border-0" placeholder="<?=$language['Search']?>">
+                  <input type="text" class="form-control rounded bg-light border-0" placeholder="<?=$language['Search']?>" name="q" id="q" required value="<?php echo (isset($_GET["q"])?$_GET["q"]:'') ?>" >
                   <i class="mdi mdi-magnify search-icon"></i> </div>
               </div>
             </form>
@@ -133,9 +133,7 @@
                       data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <img class="rounded-circle header-profile-user" src="/assets/images/users/<?=auth()->user()->photo?>" alt="Header Avatar"> </button>
             <div class="dropdown-menu dropdown-menu-end pt-0"> <a class="dropdown-item" href="/myaccount"><i class='bx bx-user-circle text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
             <?=$language['My_Account']?>
-            </span></a> <a class="dropdown-item" href="/chat"><i class='bx bx-chat text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
-            <?=$language['Chat']?>
-            </span></a> <a class="dropdown-item" href="/help"><i class='bx bx-buoy text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
+            </span></a>  <a class="dropdown-item" href="/help"><i class='bx bx-buoy text-muted font-size-18 align-middle me-1'></i> <span class="align-middle">
             <?=$language['Support']?>
             </span></a>
             <div class="dropdown-divider"></div>

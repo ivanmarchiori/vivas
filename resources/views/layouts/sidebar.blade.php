@@ -48,19 +48,9 @@
                         <span class="menu-item" data-key="t-contacts"><?php echo $language["Oportunidades"]; ?></span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="/contact/grid" data-key="t-user-grid"><?php echo $language["Kanban"]; ?></a></li>
-                        <li><a href="/notes" data-key="t-user-list"><?php echo $language["KanbanList"]; ?></a></li>
-                        <!--
-                        <li><a href="/myaccount" data-key="t-user-settings"><?php echo $language["Profile"]; ?></a></li>
-                        -->
+                        <li><a href="/leads/grid" data-key="t-user-grid"><?php echo $language["Kanban"]; ?></a></li>
+                        <li><a href="/leads/list" data-key="t-user-list"><?php echo $language["KanbanList"]; ?></a></li>
                     </ul>
-                </li>
-                <li>
-                    <a href="/chat">
-                        <i class="bx bx-chat icon nav-icon"></i>
-                        <span class="menu-item" data-key="t-chat"><?php echo $language["Chat"]; ?></span>
-                        <span class="badge rounded-pill bg-danger" data-key="t-hot"><?php echo $language["Hot"]; ?></span>
-                    </a>
                 </li>
                 <li>
                     <a href="/calendar">
@@ -83,8 +73,9 @@
                         <span class="menu-item" data-key="t-ecommerce"><?php echo $language["Setup"]; ?></span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="/setup" data-key="t-product-detail"><?php echo $language["SetupCompany"]; ?></a></li>
                         <li><a href="/setup/tags" data-key="t-product-detail"><?php echo $language["SetupTags"]; ?></a></li>
-                        <li><a href="/setup/parameters" data-key="t-product-detail"><?php echo $language["SetupParam"]; ?></a></li>
+                        <li><a href="/setup/param" data-key="t-product-detail"><?php echo $language["SetupParam"]; ?></a></li>
                         <li><a href="/setup/products" data-key="t-product-detail"><?php echo $language["SetupProducts"]; ?></a></li>
                         <li><a href="/setup/reasons" data-key="t-product-detail"><?php echo $language["SetupReasons"]; ?></a></li>
                         <li><a href="/setup/emails" data-key="t-product-detail"><?php echo $language["SetupEmails"]; ?></a></li>
@@ -130,7 +121,6 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="/invoice" data-key="t-invoice-list"><?php echo $language["Invoices_List"]; ?></a></li>
-                        <li><a href="/invoice/details/1" data-key="t-invoice-detail"><?php echo $language["Invoice_Detail"]; ?></a></li>
                     </ul>
                 </li>
 
@@ -165,7 +155,6 @@
                         <li><a href="pages-starter.php" data-key="t-starter-page"><?php echo $language["Starter_Page"]; ?></a></li>
                         <li><a href="pages-maintenance.php" data-key="t-maintenance"><?php echo $language["Maintenance"]; ?></a></li>
                         <li><a href="pages-comingsoon.php" data-key="t-coming-soon"><?php echo $language["Coming_Soon"]; ?></a></li>
-                        <li><a href="pages-timeline.php" data-key="t-timeline"><?php echo $language["Timeline"]; ?></a></li>
                         <li><a href="/help" data-key="t-faqs"><?php echo $language["FAQs"]; ?></a></li>
                         <li><a href="pages-pricing.php" data-key="t-pricing"><?php echo $language["Pricing"]; ?></a></li>
                         <li><a href="pages-404.php" data-key="t-error-404"><?php echo $language["Error_404"]; ?></a></li>

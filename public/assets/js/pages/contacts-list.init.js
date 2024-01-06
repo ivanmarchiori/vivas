@@ -16,7 +16,7 @@ new gridjs.Grid({
       {
         name: 'Name',
         formatter: (function (cell) {
-          return gridjs.html('<img src="/assets/images/users/'+ cell[0]+'" alt="" class="avatar-sm rounded-circle me-2" /><a href="#" class="text-body">' + cell[1] + "</a>");
+          return gridjs.html('<img src="/assets/images/users/'+ cell[0]+'" alt="" class="avatar-sm rounded-circle me-2" /><a href="/leads/list-details/1" class="text-body">' + cell[1] + "</a>");
         })
       },
 
@@ -49,9 +49,10 @@ new gridjs.Grid({
       }
     ],
   pagination: {
-    limit: 10
+    limit: 7
   },
   sort: true,
+  fixedHeader: true,
   search: true,
   data: [
     ["", ["avatar-1.jpg", "Nome Completo"], "Funcao", "email@provedor.com", "000", "Paid", "Mastercard", "Ver Detalhes"],

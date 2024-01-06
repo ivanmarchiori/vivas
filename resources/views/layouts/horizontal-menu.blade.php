@@ -47,7 +47,6 @@
                                 <div class="dropdown-menu" aria-labelledby="topnav-pages">
 
                                     <a href="/calendar" class="dropdown-item" data-key="t-calendar"><?php echo $language["Calendar"]; ?></a>
-                                    <a href="/assets/ class="dropdown-item" data-key="t-chat"><?php echo $language["Chat"]; ?></a>
                                     <div class="dropdown">
                                         <a class="dropdown-item dropdown-toggle arrow-none" href="#" id="topnav-email"
                                             role="button">
@@ -76,7 +75,6 @@
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="topnav-invoice">
                                             <a href="/invoice" class="dropdown-item" data-key="t-invoice-list"><?php echo $language["Invoices_List"]; ?></a>
-                                            <a href="/invoice/details/1" class="dropdown-item" data-key="t-invoice-detail"><?php echo $language["Invoice_Detail"]; ?></a>
                                         </div>
                                     </div>
 
@@ -86,8 +84,8 @@
                                            <span data-key="t-contacts"><?php echo $language["Oportunidades"]; ?></span> <div class="arrow-down"></div>
                                         </a>
                                         <div class="dropdown-menu" aria-labelledby="topnav-contact">
-                                            <a href="/contact/grid" class="dropdown-item" data-key="t-user-grid"><?php echo $language["Kanban"]; ?></a>
-                                            <a href="/notes" class="dropdown-item" data-key="t-user-list"><?php echo $language["KanbanList"]; ?></a>
+                                            <a href="/leads/grid" class="dropdown-item" data-key="t-user-grid"><?php echo $language["Kanban"]; ?></a>
+                                            <a href="/leads/list" class="dropdown-item" data-key="t-user-list"><?php echo $language["KanbanList"]; ?></a>
                                             <!--
                                             <a href="/myaccount" class="dropdown-item" data-key="t-user-settings"><?php echo $language["Profile"]; ?></a>
                                             -->
@@ -256,7 +254,6 @@
                                             <a href="pages-starter.php" class="dropdown-item" data-key="t-starter-page"><?php echo $language["Starter_Page"]; ?></a>
                                             <a href="pages-maintenance.php" class="dropdown-item" data-key="t-maintenance"><?php echo $language["Maintenance"]; ?></a>
                                             <a href="pages-comingsoon.php" class="dropdown-item" data-key="t-coming-soon"><?php echo $language["Coming_Soon"]; ?></a>
-                                            <a href="pages-timeline.php" class="dropdown-item" data-key="t-timeline"><?php echo $language["Timeline"]; ?></a>
                                             <a href="/help" class="dropdown-item" data-key="t-faqs"><?php echo $language["FAQs"]; ?></a>
                                             <a href="pages-pricing.php" class="dropdown-item" data-key="t-pricing"><?php echo $language["Pricing"]; ?></a>
                                             <a href="pages-404.php" class="dropdown-item" data-key="t-error-404"><?php echo $language["Error_404"]; ?></a>
@@ -281,10 +278,10 @@
                     <i class="icon-sm" data-feather="search"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0">
-                    <form class="p-3">
+                    <form class="p-3" method="GET" action="/search">
                         <div class="search-box">
                             <div class="position-relative">
-                                <input type="text" class="form-control rounded" placeholder="<?php echo $language["Search_here"] ?>...">
+                                <input type="text" class="form-control rounded" name="q" id="q" required value="<?php echo (isset($_GET["q"])?$_GET["q"]:'') ?>" placeholder="<?php echo $language["Search_here"] ?>...">
                                 <i class="mdi mdi-magnify search-icon"></i>
                             </div>
                         </div>
@@ -444,7 +441,6 @@
                 </button>
                 <div class="dropdown-menu dropdown-menu-end pt-0">
                     <a class="dropdown-item" href="/myaccount"><i class='bx bx-user-circle text-muted font-size-18 align-middle me-1'></i> <span class="align-middle"><?php echo $language["My_Account"]; ?></span></a>
-                    <a class="dropdown-item" href="/assets/><i class='bx bx-chat text-muted font-size-18 align-middle me-1'></i> <span class="align-middle"><?php echo $language["Chat"]; ?></span></a>
                     <a class="dropdown-item" href="/help"><i class='bx bx-buoy text-muted font-size-18 align-middle me-1'></i> <span class="align-middle"><?php echo $language["Support"]; ?></span></a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item d-flex align-items-center" href="#"><i class='bx bx-cog text-muted font-size-18 align-middle me-1'></i> <span class="align-middle me-3"><?php echo $language["Settings"]; ?></span><span class="badge badge-soft-success ms-auto">New</span></a>

@@ -51,7 +51,7 @@ include(resource_path("lang/{$lang}.php"));
                                 <a href="#"><span class="mdi mdi-circle-outline text-success float-end"></span>Family</a>
                             </div>
 
-                            <h6 class="mt-4">Chat</h6>
+                            <h6 class="mt-4">Timeline</h6>
 
                             <div class="mt-2">
                                 <a href="#" class="d-flex align-items-start">

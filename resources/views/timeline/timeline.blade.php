@@ -19,7 +19,7 @@ include(resource_path("lang/{$lang}.php"));
                 <!-- start page title -->
                 <?php
                 $maintitle = $language['NomeEmpresa'] ;
-                $title = $language["Chat"];
+                $title = $language["Timeline"];
                 ?>
                 <?php
                 include resource_path('views/layouts/breadcrumb.php');
