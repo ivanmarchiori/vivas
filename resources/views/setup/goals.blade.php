@@ -4,10 +4,6 @@ include resource_path("lang/{$lang}.php");
 
 @extends('layouts.layout')
 @section('conteudo')
-    <!-- gridjs css -->
-    <link rel="stylesheet" href="/assets/libs/gridjs/theme/mermaid.min.css">
-    <!-- flatpickr css -->
-    <link href="/assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css">
     <div id="layout-wrapper">
 
         <?php include resource_path('views/layouts/menu.php'); ?>
@@ -29,18 +25,27 @@ include resource_path("lang/{$lang}.php");
                     include resource_path('views/layouts/breadcrumb.php');
                     ?>
                     <!-- end page title -->
+
                     <div class="row">
-                        <div class="col-lg-12">
-                            <div class="card">
-                                <div class="card-body">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-xl-3">
+                                    <?php include resource_path('views/setup/menu.blade.php'); ?>
+                                </div> <!-- end col-->
 
-                                    Conteudo
-
-                                </div>
+                                <div class="col-xl-9">
+                                    <div class="card card-h-100">
+                                        <div class="card-body">
+                                            Conteudo
+                                        </div>
+                                    </div>
+                                </div> <!-- end col -->
                             </div>
+
+                            <div style='clear:both'></div>
+
                         </div>
                     </div>
-
 
                 </div> <!-- container-fluid -->
             </div>
@@ -52,10 +57,4 @@ include resource_path("lang/{$lang}.php");
         <!-- end main content-->
 
     </div>
-    <!-- gridjs js -->
-    <script src="/assets/libs/gridjs/gridjs.umd.js"></script>
-    <!-- flatpickr js -->
-    <script src="/assets/libs/flatpickr/flatpickr.min.js"></script>
-
-    <script src="/assets/js/app.js"></script>
 @endsection

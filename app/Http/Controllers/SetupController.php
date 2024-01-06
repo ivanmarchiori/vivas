@@ -25,7 +25,7 @@ class SetupController extends Controller
     }
     public function emails()
     {
-        $canal = 'setup';
+        $canal = 'emails';
         if (Cookie::has('lang')) {
             $lang = Cookie::get('lang');
         } else {
@@ -38,7 +38,7 @@ class SetupController extends Controller
     }
     public function goals()
     {
-        $canal = 'setup';
+        $canal = 'goals';
         if (Cookie::has('lang')) {
             $lang = Cookie::get('lang');
         } else {
@@ -51,7 +51,7 @@ class SetupController extends Controller
     }
     public function param()
     {
-        $canal = 'setup';
+        $canal = 'param';
         if (Cookie::has('lang')) {
             $lang = Cookie::get('lang');
         } else {
@@ -64,7 +64,7 @@ class SetupController extends Controller
     }
     public function products()
     {
-        $canal = 'setup';
+        $canal = 'products';
         if (Cookie::has('lang')) {
             $lang = Cookie::get('lang');
         } else {
@@ -77,7 +77,7 @@ class SetupController extends Controller
     }
     public function reasons()
     {
-        $canal = 'setup';
+        $canal = 'reasons';
         if (Cookie::has('lang')) {
             $lang = Cookie::get('lang');
         } else {
@@ -90,7 +90,7 @@ class SetupController extends Controller
     }
     public function tags()
     {
-        $canal = 'setup';
+        $canal = 'tags';
         if (Cookie::has('lang')) {
             $lang = Cookie::get('lang');
         } else {
@@ -103,7 +103,7 @@ class SetupController extends Controller
     }
     public function users()
     {
-        $canal = 'setup';
+        $canal = 'users';
         if (Cookie::has('lang')) {
             $lang = Cookie::get('lang');
         } else {
