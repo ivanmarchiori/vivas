@@ -1,2 +1,2 @@
 <!DOCTYPE html>
-<html lang="<?php echo $lang ?>">
+<html lang="<?php echo $lang; ?>">

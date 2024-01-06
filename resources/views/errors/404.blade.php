@@ -1,5 +1,5 @@
 <?php
-include(resource_path("lang/br.php"));
+include resource_path('lang/br.php');
 ?>
 
 @extends('layouts.layout')
@@ -13,16 +13,18 @@ include(resource_path("lang/br.php"));
                         <div class="row justify-content-center">
                             <div class="col-sm-9">
                                 <div class="error-img">
-                                    <img src="/assets/images/404-img.png" alt="" class="img-fluid mx-auto d-block">
+                                    <img src="/assets/images/404-img.png" alt=""
+                                        class="img-fluid mx-auto d-block">
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <h4 class="text-uppercase mt-5">{{$language['404Title']}}</h4>
-                    <p class="text-muted">{{$language['404Desc']}}</p>
+                    <h4 class="text-uppercase mt-5">{{ $language['404Title'] }}</h4>
+                    <p class="text-muted">{{ $language['404Desc'] }}</p>
                     <div class="mt-5">
-                        <a class="btn btn-primary waves-effect waves-light" href="/">{{$language['404Button']}}</a>
+                        <a class="btn btn-primary waves-effect waves-light"
+                            href="/">{{ $language['404Button'] }}</a>
                     </div>
 
                 </div>
