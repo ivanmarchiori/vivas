@@ -152,22 +152,21 @@ include resource_path("lang/{$lang}.php");
                                         <div class="col-md-4 col-6">
                                             <h5 class="font-size-16 mb-1 text-truncate"><a href="#"
                                                     class="text-dark"><?php echo $language['Partners']?></a></h5>
-                                            <p class="text-muted text-truncate mb-0">12 <?php echo $language['Partners']?></p>
+                                            <p class="text-muted text-truncate mb-0">Todos</p>
                                         </div>
                                         <div class="col-md-8 col-6">
                                             <div class="row">
                                                 <div class="col">
                                                     <div class="position-relative">
-                                                        <input type="text" class="form-control chat-input rounded"
-                                                            placeholder="Enter Message...">
+
 
                                                     </div>
                                                 </div>
                                                 <div class="col-auto">
                                                     <button type="submit"
                                                         class="btn btn-primary chat-send w-md waves-effect waves-light"><span
-                                                            class="d-none d-sm-inline-block me-2">Send</span> <i
-                                                            class="mdi mdi-send float-end"></i></button>
+                                                            class="d-none d-sm-inline-block me-2">Add Partner</span> <i
+                                                            class="mdi mdi-plus float-end"></i></button>
                                                 </div>
                                             </div>
                                         </div>
