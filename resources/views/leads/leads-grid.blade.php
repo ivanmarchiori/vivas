@@ -13,6 +13,7 @@ include resource_path("lang/{$lang}.php");
         <!-- ============================================================== -->
 
         <link rel="stylesheet" href="/assets/libs/gridjs/theme/mermaid.min.css">
+        <link rel="stylesheet" href="/assets/libs/kanban/css/kanban.css">
         <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <div class="main-content">
@@ -29,70 +30,111 @@ include resource_path("lang/{$lang}.php");
                     include resource_path('views/layouts/breadcrumb.php');
                     ?>
                     <!-- end page title -->
-
                     <div class="row">
-                        <?php
-                    $columns = ['Oportunidades','Apresentar','Negociacao','Proposta','Aprovação','Expirados'];
-                    $cards = ['card1','card2','card3','card4'];
-                    foreach($columns as $column){
-                        ?>
+                        <div role="region" class="rs-panel-body" style="overflow-x: auto;">
+                            <div class="rs-stack" style="align-items: flex-start; flex-direction: row; gap: 10px;">
+                                <?php
+                                $columnsId = ['1','2','3','4','5','6','7','8','9'];
+                                $columnsLabel = ['Oportunidades','Apresentar','Perguntar','Respondido','Enviar Proposta','Aguardando Aprovação','Aprovado','Reprovado','Expirados'];
+                                $columnsParamColor = [['#090','#FFF'],['#EEE','#000'],['#EEE','#000'],['#EEE','#000'],['#EEE','#000'],['#EEE','#000'],['#EEE','#000'],['#EEE','#000'],['#900','#FFF']];
+                                $cards = ['Cliente Xpto0','Cliente Xpto1','Cliente Xpto2','Cliente Xpto3','Cliente Xpto4','Cliente Xpto5','Cliente Xpto6','Cliente Xpto7','Cliente Xpto8'];
 
-                        <div class="col-xl-2 col-sm-4 droppable-column" data-column="<?php echo $column; ?>">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5  class="font-size-16 mb-1"><?php echo $column; ?></h5>
-
-                                    <?php
-                                    foreach($cards as $card){
+                                $colPos = 0;
+                                foreach($columnsId as $column){
                                     ?>
-                                    <!-- start sub card -->
-                                    <div class="col-xl-12 col-sm-12 draggable-card" data-cardid="unique-card-<?php echo $column; ?>-<?php echo $card; ?>">
-                                        <div class="card" style="background-color:#f8f8f8;">
-                                            <div class="card-body">
-                                                <div class="dropdown float-end">
-                                                    <a class="text-muted dropdown-toggle font-size-16" href="#"
-                                                        role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                        <i class="bx bx-dots-horizontal-rounded"></i>
-                                                    </a>
-                                                    <div class="dropdown-menu dropdown-menu-end">
-                                                        <a class="dropdown-item" href="#">Edit</a>
-                                                        <a class="dropdown-item" href="#">Action</a>
-                                                        <a class="dropdown-item" href="#">Remove</a>
+                                <div class="rs-stack-item">
+                                    <div data-rbd-droppable-id="0" data-rbd-droppable-context-id="2"
+                                        class="board-column rs-panel">
+                                        <div aria-expanded="false" class="rs-panel-header p-2" tabindex="-1"
+                                            style="background-color:<?= $columnsParamColor[$colPos][0] ?>;color:<?= $columnsParamColor[$colPos][1] ?>;">
+                                            <div class="rs-panel-title rs-stack"
+                                                style="align-items: center; justify-content: space-between;">
+                                                <div class="rs-stack-item">
+                                                    <div class="text-editor"><input class="rs-input" type="text"
+                                                            value="Tutorials">
+                                                        <div class="text-view"><?php echo $columnsLabel[$colPos]; ?></div>
                                                     </div>
                                                 </div>
-                                                <div class="d-flex align-items-center">
-                                                    <div class="flex-1 ms-3">
-                                                        <h5 class="font-size-16 mb-1"><a href="#"
-                                                                class="text-dark">Nome Cliente</a></h5>
-                                                        <p class="text-muted mb-0">Tipo Produto</p>
-                                                    </div>
+                                                <?php if($colPos==0){?>
+                                                <div class="rs-stack-item"><button type="button"
+                                                        class="rs-btn-icon rs-btn-icon-placement-left rs-btn rs-btn-subtle"
+                                                        style="border: 1px solid #247913; color:#FFF;"><svg width="1em"
+                                                            height="1em" viewBox="0 0 16 16" fill="currentColor"
+                                                            aria-hidden="true" focusable="false" class="rs-icon"
+                                                            aria-label="more" data-category="application">
+                                                            <path
+                                                                d="M4 8a1 1 0 11-2 0 1 1 0 012 0zM14 8a1 1 0 11-2 0 1 1 0 012 0zM9 8a1 1 0 11-2 0 1 1 0 012 0z">
+                                                            </path>
+                                                        </svg><span class="rs-ripple-pond"><span class="rs-ripple"
+                                                                style="width: 66.4831px; height: 66.4831px; left: -21.2415px; top: -10.2415px;"></span></span></button>
                                                 </div>
-                                                <p class="mt-3 text-muted">Curabitur non magna lobortis...</p>
-
-                                                <div class="pt-1">
-                                                    <button type="button"
-                                                        class="btn btn-soft-primary btn-sm text-truncate"><i
-                                                            class="bx bx-user me-1"></i> Status</button>
-                                                    <a href="/contact/profile"
-                                                        class="btn btn-primary btn-sm text-truncate ms-2"><i
-                                                            class="bx bx-message-square-dots me-1"></i> Tag</a>
-                                                </div>
+                                                <?php
+                                                }
+                                                ?>
                                             </div>
                                         </div>
+                                        <div role="region" class="rs-panel-body my-custom-scrollbar" style="max-height:600px;">
+                                            <div role="list" class="rs-list">
+                                                <?php
+                                                foreach($cards as $card){
+                                                ?>
+                                                <div role="button" data-rbd-draggable-context-id="2"
+                                                    data-rbd-draggable-id="131" tabindex="0"
+                                                    aria-describedby="rbd-hidden-text-2-hidden-text-162"
+                                                    data-rbd-drag-handle-draggable-id="131"
+                                                    data-rbd-drag-handle-context-id="2" draggable="false"
+                                                    class="card rs-list-item rs-list-item-md mt-1" style="">
+                                                    <?php echo $card; ?><div class="rs-stack"
+                                                        style="align-items: center; justify-content: space-between; margin-top: 10px;">
+                                                        <div class="rs-stack-item">
+                                                            <div class="rs-avatar-group rs-avatar-group-stack">
+                                                                <div class="rs-avatar rs-avatar-xs rs-avatar-circle"><img
+                                                                        class="rs-avatar-image"
+                                                                        src="https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1241.jpg"
+                                                                        alt="Nico Heller"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="rs-stack-item">
+                                                            <div role="group" class="card-actions rs-btn-group"><button
+                                                                    type="button"
+                                                                    class="rs-btn-icon rs-btn-icon-placement-left rs-btn rs-btn-default rs-btn-sm"><svg
+                                                                        stroke="currentColor" fill="currentColor"
+                                                                        stroke-width="0" viewBox="0 0 16 16" height="1em"
+                                                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path
+                                                                            d="M13.23 1h-1.46L3.52 9.25l-.16.22L1 13.59 2.41 15l4.12-2.36.22-.16L15 4.23V2.77L13.23 1zM2.41 13.59l1.51-3 1.45 1.45-2.96 1.55zm3.83-2.06L4.47 9.76l8-8 1.77 1.77-8 8z">
+                                                                        </path>
+                                                                    </svg><span class="rs-ripple-pond"><span
+                                                                            class="rs-ripple"></span></span></button><button
+                                                                    type="button"
+                                                                    class="rs-btn-icon rs-btn-icon-placement-left rs-btn rs-btn-default rs-btn-sm"><svg
+                                                                        stroke="currentColor" fill="currentColor"
+                                                                        stroke-width="0" viewBox="0 0 16 16" height="1em"
+                                                                        width="1em" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                            d="M10 3h3v1h-1v9l-1 1H4l-1-1V4H2V3h3V2a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v1zM9 2H6v1h3V2zM4 13h7V4H4v9zm2-8H5v7h1V5zm1 0h1v7H7V5zm2 0h1v7H9V5z">
+                                                                        </path>
+                                                                    </svg><span class="rs-ripple-pond"><span
+                                                                            class="rs-ripple"></span></span></button></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <?php
+                                                }
+                                                ?>
+                                            </div>
+
+                                        </div>
                                     </div>
-                                    <!-- end sub card -->
-                                    <?php
-                                }
-                                ?>
-
                                 </div>
-                            </div>
-                            <!-- end card -->
-                        </div>
-                        <?php
-                    }
-                    ?>
+                                <?php
+                                $colPos++;
+                                $cards = ['Cliente Xpto0'.$colPos,'Cliente Xpto1'.$colPos,'Cliente Xpto2'.$colPos];
+                                }
+                                    ?>
 
+                            </div>
+                        </div>
                     </div>
                     <!-- end row -->
 
@@ -101,8 +143,8 @@ include resource_path("lang/{$lang}.php");
             <!-- End Page-content -->
 
             <!--  successfully modal  -->
-            <div id="success-btn" class="modal fade" tabindex="-1" aria-labelledby="success-btnLabel"
-                aria-hidden="true" data-bs-scroll="true">
+            <div id="success-btn" class="modal fade" tabindex="-1" aria-labelledby="success-btnLabel" aria-hidden="true"
+                data-bs-scroll="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -196,7 +238,7 @@ include resource_path("lang/{$lang}.php");
     <script src="/assets/js/app.js"></script>
 
     <script>
-        $(function () {
+        $(function() {
             $(".draggable-card").draggable({
                 revert: "invalid",
                 cursor: "move"
@@ -204,7 +246,7 @@ include resource_path("lang/{$lang}.php");
 
             $(".droppable-column").droppable({
                 accept: ".draggable-card",
-                drop: function (event, ui) {
+                drop: function(event, ui) {
                     // Lógica para mover o card entre as colunas
                     var draggedCard = ui.helper.clone();
                     draggedCard.removeClass("ui-draggable-dragging");
@@ -214,6 +256,4 @@ include resource_path("lang/{$lang}.php");
             });
         });
     </script>
-
-
 @endsection

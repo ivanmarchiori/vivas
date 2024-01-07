@@ -7,6 +7,7 @@ include resource_path("lang/{$lang}.php");
     <div id="layout-wrapper">
 
         <?php include resource_path('views/layouts/menu.php'); ?>
+        <link rel="stylesheet" href="/assets/libs/gridjs/theme/mermaid.min.css">
 
         <!-- ============================================================== -->
         <!-- Start right Content here -->
@@ -33,12 +34,38 @@ include resource_path("lang/{$lang}.php");
                                     <?php include resource_path('views/setup/menu.blade.php'); ?>
                                 </div> <!-- end col-->
 
-                                <div class="col-xl-9">
-                                    <div class="card card-h-100">
-                                        <div class="card-body">
-                                            Conteudo
+                                <div class="col-xl-9"><div class="card">
+                                    <div class="p-3 px-lg-4 border-bottom">
+                                        <div class="row">
+                                            <div class="col-md-4 col-6">
+                                                <h5 class="font-size-16 mb-1 text-truncate"><a href="#"
+                                                        class="text-dark"><?php echo $language['SetupProducts']?></a></h5>
+                                                <p class="text-muted text-truncate mb-0">Todos</p>
+                                            </div>
+                                            <div class="col-md-8 col-6">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div class="position-relative">
+
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <button type="submit"
+                                                            class="btn btn-primary chat-send w-md waves-effect waves-light"><span
+                                                                class="d-none d-sm-inline-block me-2">Add <?php echo $language['SetupProducts']?></span> <i
+                                                                class="mdi mdi-plus float-end"></i></button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
+
+
+                                    <div class="p-3 chat-input-section">
+                                        <div id="table-contacts-list"></div>
+                                    </div>
+                                </div>
                                 </div> <!-- end col -->
                             </div>
 
@@ -57,4 +84,11 @@ include resource_path("lang/{$lang}.php");
         <!-- end main content-->
 
     </div>
+
+    <script src="/assets/libs/gridjs/gridjs.umd.js"></script>
+
+    <script src="/assets/js/pages/contacts-list.init.js"></script>
+
+    <script src="/assets/js/app.js"></script>
 @endsection
+

@@ -62,10 +62,30 @@ include resource_path("lang/{$lang}.php");
                                         </div>
                                     </div>
                                 </div> <!-- end col-->
-
                                 <div class="col-xl-9">
-                                    <div class="card card-h-100">
-                                        <div class="card-body">
+                                    <div class="card">
+                                        <div class="p-3 px-lg-4 border-bottom">
+                                            <div class="row">
+                                                <div class="col-md-4 col-6">
+                                                    <h5 class="font-size-16 mb-1 text-truncate"><a href="#"
+                                                            class="text-dark"><?php echo $title; ?></a></h5>
+                                                    <p class="text-muted text-truncate mb-0">Todos</p>
+                                                </div>
+                                                <div class="col-md-8 col-6">
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <div class="position-relative">
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="p-3 chat-input-section">
                                             <div id="calendar"></div>
                                         </div>
                                     </div>

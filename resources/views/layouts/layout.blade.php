@@ -16,7 +16,7 @@ include resource_path('views/layouts/head-main.blade.php');
     <?php include resource_path('views/layouts/head-style.blade.php'); ?>
 </head>
 
-<body data-layout="vertical" data-topbar="dark">
+<body data-layout="vertical" data-topbar="dark" style="overflow:scroll;">
     @yield('conteudo')
 </body>
 <?php include resource_path('views/layouts/vendor-scripts.blade.php'); ?>

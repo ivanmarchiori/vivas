@@ -175,7 +175,6 @@ include resource_path("lang/{$lang}.php");
 
 
                                 <div class="p-3 chat-input-section">
-
                                     <div id="table-contacts-list"></div>
                                 </div>
                             </div>
